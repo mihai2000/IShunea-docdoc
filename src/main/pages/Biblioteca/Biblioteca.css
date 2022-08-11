@@ -1,0 +1,213 @@
+.Library {
+    margin-top: 30px;
+}
+
+.Library .Path a {
+    color: #00b19f;
+}
+
+section.library .library__left h1,
+section.library .library__left h2,
+section.library .library__left h3 {
+    height: 32px;
+    text-align: left;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 0 0;
+}
+
+section.library .library__left h3 {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0 0 0;
+}
+
+section.library .library__left h3 a {
+    color: #00b19f;
+    text-decoration: underline;
+}
+
+section.library .library__left .left__column span.letter {
+    text-align: center;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    margin-left: -10px;
+}
+
+section.library .library__left .left__column ul li {
+    margin: 0;
+    padding: 7px;
+    border-top: 1px solid #00b19f;
+}
+
+section.library .library__left .left__column ul li:last-child {
+    border-bottom: 1px solid #00b19f;
+}
+
+section.library .library__element {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+}
+
+section.library .library__element h1,
+section.library .library__element h2 {
+    height: 32px;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 10px 0 0 0;
+}
+
+section.library .library__element h3 {
+    margin: 10px 0 0 0;
+}
+
+section.library .library__element h3 a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #00b19f;
+}
+
+section.library .library__element p {
+    margin-bottom: 0;
+}
+
+section.library .library__element .Path {
+    margin-top: 10px;
+}
+
+section.library .library__element .Path a {
+    color: #00b19f;
+}
+
+section.library .library__element ul {
+    margin: 20px 0 0 0;
+}
+
+section.library .library__element ul li {
+    margin: 5px 0 0 0;
+}
+
+section.library .library__element ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #00b19f;
+}
+
+section.library .library__right h2 {
+    height: 32px;
+    text-align: center;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 0 0;
+}
+
+section.library ul {
+    list-style-type: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+section.library ul li {
+    margin: 0 0 15px;
+}
+
+section.library ul li a {
+    transition: .5s;
+}
+
+section.library ul li a .program-medic2__icon,
+section.library ul li a .program-medic2__text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.library ul li a .program-medic2__icon {
+    height: 20px;
+    width: 20px;
+    background-image: url(../../../assets/iconarrowrightgray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    float: left;
+}
+
+section.library ul li a .program-medic2__text {
+    width: calc(100% - 27px);
+}
+
+section.library ul li a .program-medic2__text h3,
+section.library ul li a .program-medic2__text span,
+section.library ul li a .program-medic2__text i {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 0 7px;
+    display: inline-block;
+}
+
+section.library ul li a .program-medic2__text i {
+    float: right;
+}
+
+section.library ul li a:focus {
+    outline: 0;
+}
+
+section.library ul li a:hover .program-medic2__icon {
+    background-image: url(../../../assets/iconarrowrightgreen.png);
+}
+
+section.library ul li a:hover span,
+section.library ul li a:hover i {
+    color: #00b19f;
+}
+/*related*/
+.Related ul.Directions {
+    list-style: none;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+.Related ul.Directions li {
+    border: 1px solid #00b19f;
+    border-radius: 4px;
+    margin: 0 0 15px 0;
+    padding: 5px 10px 10px 10px;
+}
+
+.Related ul.Directions li a {
+    font-weight: 700;
+    font-size: 15px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.Related ul.Directions li a:hover {
+    color: red;
+}
+
+.Related ul.Directions u {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+}

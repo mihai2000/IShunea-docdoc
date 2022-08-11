@@ -1,0 +1,100 @@
+.facebook{
+    color: blue;
+
+}
+.instagram{
+    border-radius: 50%;
+    border: 1px solid white;
+    background: linear-gradient(40deg, #f09433 20%,#e6683c 40%,#dc2743 60%,#cc2366 80%,#bc1888 100%);
+    padding: 4px;
+    color: white;
+    font-size: 10px;
+}
+.youtube{
+    color: red;
+}
+section.footer{
+    display: flex;
+    min-height: 200px;
+    background-color:#eeeeee;
+}
+section.footer .link-block.sign-in-block ul li a {
+    font-weight: 700;
+}
+section.footer .link-block{
+    margin-left:50px;
+    margin-right: -80px;
+}
+section.footer .link-block h1 {
+    line-height: 20px;
+    color: #5c5858;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 20px 5px;
+
+}
+
+section.footer .link-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 5px;
+}
+
+section.footer .link-block ul li a {
+    color: #5c5858;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+section.footer .link-block ul li a:hover,
+section.footer .link-block ul li a:focus {
+    outline: 0;
+    text-decoration: underline;
+}
+
+section.footer .link-block ul.social-media-block li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section.footer .link-block ul.social-media-block li a {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+section.footer .icon-block h1 {
+    line-height: 19px;
+    color: #5c5858;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 100px;
+    width: 90%;
+}
+section.footer .footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+section.footer .footer .icon-block .logofooter {
+    position: relative;
+    left: 25%;
+    margin: 0;
+    width: 230px;
+}
+section.footer .container .footer {
+    margin-top: 50px;
+}
+section.footer .container .footer .link-block {
+    min-height: 50px;
+}
+section.footer .container .footer .link-block ul {
+    margin-bottom: 50px;
+}

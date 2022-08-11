@@ -1,0 +1,132 @@
+section .program-medic1 {
+    background-color: #fff;
+    min-height: 100px;
+}
+section .program-medic1 h1 {
+    text-align: center;
+    color: #1d1d1d;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 0 0;
+}
+
+section .program-medic1 .figure {
+    height: 21px;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    text-align: center;
+}
+
+section .program-medic1 .figure img {
+    display: inline-block;
+}
+
+section .program-medic1 .figure .line1 {
+    margin-right: 10px;
+}
+
+section .program-medic1 .figure .line2 {
+    margin-left: 10px;
+}
+
+section .program-medic2 .program-medic2 {
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 110px;
+}
+section .program-medic2 .program-medic2 div ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+section .program-medic2 .program-medic2 div ul li {
+    margin: 0 0 15px;
+}
+
+section .program-medic2 .program-medic2 div ul li a {
+    transition: .5s;
+}
+
+section .program-medic2 .program-medic2 div ul li a .program-medic2__icon,
+section .program-medic2 .program-medic2 div ul li a h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section .program-medic2 .program-medic2 div ul li a .program-medic2__icon {
+    height: 20px;
+    width: 20px;
+    background-image: url(../../../../assets/iconarrowrightgray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    float: left;
+}
+
+section .program-medic2 .program-medic2 div ul li a h1 {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 0 7px;
+}
+
+section .program-medic2 .program-medic2 div ul li a:focus {
+    outline: 0;
+}
+
+section .program-medic2 .program-medic2 div ul li a:hover .program-medic2__icon {
+    background-image: url(../../../../assets/iconarrowrightgreen.png);
+}
+
+section .program-medic2 .program-medic2 div ul li a:hover h1 {
+    color: #00b19f;
+}
+
+section .program-medic2 .program-medic2 div ul li:last-child {
+    margin: 0;
+}
+section .program-medic3 {
+    background-color: #fff;
+}
+
+section .program-medic3 div {
+    height: 16px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section .program-medic3 div a h1,
+section .program-medic3 div a img {
+    display: inline-block;
+}
+
+section .program-medic3 div a h1 {
+    color: #1d1d1d;
+    font-family: 'PT Sans', sans-serif;;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+section .program-medic3 div a img {
+    margin-left: 13px;
+    position: relative;
+}
+
+section .program-medic3 div a:focus {
+    outline: 0;
+}

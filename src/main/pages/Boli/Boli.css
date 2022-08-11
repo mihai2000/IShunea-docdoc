@@ -1,0 +1,168 @@
+section.diseases .diseases__left h1 {
+    height: 32px;
+    text-align: center;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 20px 0;
+}
+
+section.diseases .diseases__left .row .left__column span.letter {
+    text-align: center;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    margin-left: -10px;
+}
+
+section.diseases .diseases__element {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+}
+
+section.diseases .diseases__element ul.Letters {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+}
+
+section.diseases .diseases__element ul.Letters li.Letters {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    transition: 0.5s;
+}
+
+section.diseases .diseases__element ul.Letters li.Letters span,
+section.diseases .diseases__element ul.Letters li.Letters a {
+    color: #1d1d1d;
+}
+
+section.diseases .diseases__element ul.Letters li.Letters a {
+    text-decoration: underline;
+}
+
+section.diseases .diseases__element ul.Letters li.Letters:hover span,
+section.diseases .diseases__element ul.Letters li.Letters:hover a {
+    color: #00b19f;
+}
+
+section.diseases .diseases__element h1,
+section.diseases .diseases__element h2 {
+    height: 32px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 10px 0 20px 0;
+}
+
+section.diseases .diseases__element h1 span,
+section.diseases .diseases__element h2 span {
+    color: #1d1d1d !important;
+}
+
+section.diseases .diseases__element .More {
+    margin: 0 0 10px 0;
+}
+
+section.diseases .diseases__element .More a {
+    color: #00b19f;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+section.diseases .diseases__element .More span {
+    display: none;
+}
+
+section.diseases .diseases__element ul {
+    list-style-type: disc;
+    margin: 0;
+}
+
+section.diseases .diseases__element ul li {
+    margin: 0 0 0 30px;
+}
+
+section.diseases .diseases__element p.Standard {
+    margin: 0 0 15px 0;
+}
+
+section.diseases .diseases__right h2 {
+    height: 32px;
+    text-align: center;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 0 0;
+}
+
+section.diseases .diseases__right .Specialities {
+    margin-top: 68px;
+}
+
+section.diseases ul {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+section.diseases ul li {
+    margin: 0 0 15px;
+}
+
+section.diseases ul li a {
+    transition: .5s;
+}
+
+section.diseases ul li a .program-medic2__icon,
+section.diseases ul li a .program-medic2__text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.diseases ul li a .program-medic2__icon {
+    height: 20px;
+    width: 20px;
+    background-image: url(../../../assets/iconarrowrightgray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+section.diseases ul li a .program-medic2__text {
+    width: calc(100% - 27px);
+}
+
+section.diseases ul li a .program-medic2__text h3 {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 0 7px;
+}
+
+section.diseases ul li a:focus {
+    outline: 0;
+}
+
+section.diseases ul li a:hover .program-medic2__icon {
+    background-image: url(../../../assets/iconarrowrightgreen.png);
+}
+
+section.diseases ul li a:hover h3 {
+    color: #00b19f;
+}

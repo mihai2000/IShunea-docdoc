@@ -1,0 +1,250 @@
+section.search {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.search .search {
+    min-height: 500px;
+}
+
+section.search .search.small {
+    min-height: 128px;
+}
+
+section.search .search.small .group-1 {
+    margin-top: 40px;
+    margin-bottom: 38px;
+}
+
+section.search .search h1 {
+    line-height: 44px;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin: 1px 0 0 0;
+    padding-top: 80px;
+}
+
+section.search .search .search__sub-title-span h2 {
+    width: 100%;
+    line-height: 26px;
+    color: #f5f5f5;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+section.search .search .search__sub-title-span h2 span {
+    background-image: url(../../../../assets/iconsearchspanbg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 3px;
+}
+
+section.search .search .group-1 {
+    height: 40px;
+    position: relative;
+    left: 13%;
+    margin-top: 85px;
+}
+
+section.search .search .group-1 select,
+section.search .search .group-1 button {
+    display: inline-block;
+}
+
+section.search .search .group-1 select {
+    height: 50px;
+    background-color: #fff;
+    text-indent: 10px;
+    color: #b4b5b6;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* remove default arrow */
+    background-image: url(../../../../assets/arrow.png);
+    /* add custom arrow */
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    padding-left: 10px;
+}
+
+section.search .search .group-1 select:hover {
+    color: #1d1d1d;
+}
+
+section.search .search .group-1 select:active {
+    color: #1d1d1d;
+}
+
+section.search .search .group-1 select:focus {
+    color: #1d1d1d;
+}
+
+section.search .search .group-1 select option {
+
+    padding: 18px 19px 19px 20px;
+    margin: 18px auto 20px 20px;
+}
+section.search .search .group-1 #Type {
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+    background-position: center right 20px;
+    border-right: 1px solid #d4d4d4;
+}
+
+section.search .search .group-1 #Special {
+    width: 295px;
+    background-position: center right 20px;
+    border-right: 1px solid #d4d4d4;
+    border-radius: 0;
+}
+
+section.search .search .group-1 #Special.Active {
+    display: none;
+}
+
+section.search .search .group-1 #SpecialService {
+    width: 295px;
+    background-position: center right 20px;
+    border-right: 1px solid #d4d4d4;
+    border-radius: 0;
+}
+
+section.search .search .group-1 #SpecialService.Active {
+    display: none;
+}
+
+section.search .search .group-1 #Location {
+    width: 295px;
+    background-position: center right 20px;
+    border-radius: 0;
+}
+
+section.search .search .group-1 #Location.Active {
+    display: none;
+}
+
+section.search .search .group-1 .search__button {
+    height: 50px;
+    width: 166px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #dc4593;
+    background-color: #dc4593;
+    position: relative;
+    top: -1.5px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section.search .search .group-1 .search__button i {
+    margin-left: 15px;
+    font-style: inherit;
+}
+
+section.search .search .group-2 {
+    min-height: 42px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 80px;
+}
+
+section.search .search .group-2 div {
+    height: 50px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+section.search .search .group-2 div img,
+section.search .search .group-2 div .statistic__content {
+    display: inline-block;
+}
+
+section.search .search .group-2 div img {
+    vertical-align: top;
+}
+
+section.search .search .group-2 div .statistic__content h1 {
+    color: #ffffff;
+    line-height: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+section.search .search .group-2 div .statistic__content h2 {
+    color: #ffffff;
+    line-height: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+section.search .search .group-2 .statistic1 {
+    vertical-align: top;
+    width: 232px;
+}
+
+section.search .search .group-2 .statistic1 h1 {
+    margin: -80px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic1 h2 {
+    margin: 10px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic2 {
+    vertical-align: top;
+    width: 214px;
+}
+
+section.search .search .group-2 .statistic2 h1 {
+    margin: -80px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic2 h2 {
+    margin: 10px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic3 {
+    width: 167px;
+}
+
+section.search .search .group-2 .statistic3 h1 {
+    margin: -80px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic3 h2 {
+    margin: 10px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic4 {
+    width: 167px;
+}
+
+section.search .search .group-2 .statistic4 h1 {
+    margin: -80px 0 0 10px;
+}
+
+section.search .search .group-2 .statistic4 h2 {
+    margin: 10px 0 0 10px;
+}
+

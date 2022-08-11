@@ -1,0 +1,165 @@
+section .program-service1 {
+    background-color: #fff;
+    min-height: 122px;
+}
+
+section .program-service1 h1 {
+    line-height: 32px;
+    text-align: center;
+    color: #1d1d1d;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 50px 0 0 0;
+}
+
+section .program-service1 .figure {
+    height: 21px;
+    position: relative;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: 15px;
+}
+
+section .program-service1 .figure img {
+    display: inline-block;
+}
+
+section .program-service1 .figure .line1 {
+    margin-right: 10px;
+}
+
+section .program-service1 .figure .line2 {
+    margin-left: 10px;
+}
+
+section .program-service2 {
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-left: 100px;
+    margin-right: 90px;
+
+}
+
+section .program-service2 div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section .program-service2 div ul li {
+    margin: 0 0 15px;
+    width: 250px;
+}
+
+section .program-service2 div ul li a {
+    transition: .5s;
+}
+
+section .program-service2 div ul li a .program-service2__icon,
+section .program-service2 div ul li a .program-service2__text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section .program-service2 div ul li a .program-service2__icon {
+    height: 20px;
+    width: 20px;
+    background-image: url(../../../../assets/iconarrowrightgray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    float: left;
+}
+
+section .program-service2 div ul li a .program-service2__text {
+    width: calc(100% - 27px);
+    margin: 0;
+}
+
+section .program-service2 div ul li a .program-service2__text h3 {
+    color: #1d1d1d;
+    font-family: 'PT Sans', sans-serif;;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 0 7px;
+}
+
+section .program-service2 div ul li a:focus {
+    /*outline: 0;*/
+}
+
+section .program-service2 div ul li a:hover .program-service2__icon {
+    background-image: url(../../../../assets/iconarrowrightgreen.png);
+}
+
+section .program-service2 div ul li a:hover .program-service2__text h3 {
+    color: #00b19f;
+}
+
+section .program-service2 div ul li.column-title a .program-service2__text h3 {
+    font-weight: 700;
+}
+
+section .program-service2 div ul li:last-child {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    section.program-service2 .container .program-service2 div {
+        margin: 10px 0 0 0;
+    }
+    section.program-service2 .container .program-service2 div ul li {
+        display: none;
+    }
+    section.program-service2 .container .program-service2 div ul li.column-title {
+        display: block;
+    }
+    section.program-service2 .container .program-service2:first-child {
+        margin-top: 10px;
+    }
+}
+
+section .program-service3 {
+    overflow: visible;
+}
+
+section .program-service3 {
+    background-color: #fff;
+}
+
+section .program-service3 div {
+    height: 16px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section .program-service3 div a h1,
+section .program-service3 div a img {
+    display: inline-block;
+}
+
+section .program-service3 div a h1 {
+    color: #1d1d1d;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+section .program-service3 div a img {
+    margin-left: 13px;
+    position: relative;
+}
+
+section .program-service3 div a:focus {
+    outline: 0;
+}
