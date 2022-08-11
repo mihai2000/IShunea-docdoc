@@ -1,0 +1,133 @@
+.Account.SignUp {
+    margin: 50px 0 30px 0;
+    text-align: center;
+}
+
+.Account.SignUp form {
+    display: inline-block;
+    border: 1px solid #68C8C6;
+    border-radius: 0;
+    background: #eefaf9;
+    padding: 30px;
+    width: 390px;
+    margin-right: 120px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Account.SignUp form::before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 140px;
+    height: 227px;
+    background: url(../../../images/Avatar03.png?1) no-repeat;
+    top: 20px;
+    right: -98px;
+}
+
+.Account.SignUp .Confirm {
+    line-height: 20px;
+    height: inherit;
+    padding: 80px 50px 0 50px;
+}
+
+.Account.SignUp form.Confirmed *:not(.Confirm) {
+    display: none;
+}
+.Account a {
+    text-decoration: underline;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Account Button {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+.Account form {
+    position: relative;
+    z-index: 1;
+    min-height: 210px;
+}
+
+.Account h1 {
+    font-size: 20px;
+}
+
+.Account .Field {
+    display: block;
+}
+
+.Account .Field input {
+    margin: 0 5px 15px 0;
+}
+.Account .Arguments {
+    display: inline-block;
+    margin: 0 20px 0 100px;
+    text-align: left;
+    width: 85%;
+}
+
+.Account .Arguments h2 {
+    margin: 0 0 20px 0;
+    color: black;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.Account .Arguments h3 {
+    text-decoration: none;
+    color: black;
+    margin: 0 0 20px 0;
+    font-size: 22px;
+}
+
+.Account .Arguments h4 {
+    font-size: 18px;
+    color: black;
+    position: relative;
+    margin: -5px 0 0 20px;
+}
+.Account .Arguments p {
+    font-size: 15px;
+}
+.Account .Arguments div>p {
+    margin: 0 0 30px 20px;
+    width: 85%;
+}
+.Account .Arguments .Icon1,
+.Account .Arguments .Icon2,
+.Account .Arguments .Icon3{
+    color: #f54d07;
+    width: 40px;
+    height: 40px;
+}
+.basic-info-button {
+    height: 40px;
+    margin: 23px 0 0 0;
+    border-radius: 3px;
+    background-color: #00b09f;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 0 20px;
+}
+.b{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.radio{
+    margin: 5px 0 15px 0;
+    line-height: 18px;
+}
+.checkTermeni p a{
+    text-decoration: underline;
+    margin-left: 5px;
+}

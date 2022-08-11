@@ -1,0 +1,62 @@
+section.doc-info-sistem .doc-info-sistem {
+    background-color: #fff;
+    min-height: 150px;
+    width: 86%;
+    margin-left: 100px;
+}
+
+section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block img,
+section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block h1 {
+    display: inline-block;
+}
+
+section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block img {
+    vertical-align: top;
+}
+
+section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block h1 {
+    vertical-align: middle;
+    line-height: 20px;
+    color: #00b09f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+section.doc-info-sistem .doc-info-sistem h2 {
+    color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+section.doc-info-sistem .doc-info-sistem .positions h1 {
+    width: 260px;
+    margin: 5px 0 5px 43px;
+}
+
+section.doc-info-sistem .doc-info-sistem .rating h1 {
+    width: 170px;
+    height: 20px;
+    margin: 5px auto 25px 30px;
+}
+
+section.doc-info-sistem .doc-info-sistem .price h1 {
+    width: 246px;
+    margin: 5px auto 5px 25px;
+}
+section.doc-info-sistem .doc-info-sistem .positions h2 {
+    width: 260px;
+}
+
+section.doc-info-sistem .doc-info-sistem .rating h2 {
+    width: 210px;
+}
+
+section.doc-info-sistem .doc-info-sistem .price h2 {
+    width: 246px;
+}
+
