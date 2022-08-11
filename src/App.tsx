@@ -24,6 +24,7 @@ function App() {
             <Header></Header>
             <Navbar></Navbar>
             <Routes>
+                {/*Routes*/}
                 <Route path="/" element={ <HomePage/> }/>
                 <Route path="/Despre" element={ <AboutPage/> }/>
                 <Route path="/TermeniSiCoditii" element={<TermeniSiConditii/>}/>
