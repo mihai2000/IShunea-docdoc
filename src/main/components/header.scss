@@ -1,61 +1,6 @@
 body {
   overflow-x: hidden;
 }
-
-body.no-scroll {
-  overflow: hidden;
-}
-
-.basic-info-button {
-  height: 40px;
-  margin: 23px 0 0 0;
-  border-radius: 3px;
-  background-color: #00b09f;
-  cursor: pointer;
-  border: none;
-  color: white;
-  padding: 0 20px;
-}
-
-.button-call {
-  height: auto;
-}
-
-.button-call .button-number {
-  color: #dc4593;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 34px;
-  vertical-align: bottom;
-}
-
-.button-call h1 {
-  text-align: center;
-}
-
-.button-call img {
-  vertical-align: text-bottom;
-}
-
-.back-button {
-  line-height: 30px;
-}
-
-.back-button img,
-.back-button h1 {
-  display: inline-block;
-}
-
-.back-button h1 {
-  line-height: 13px;
-  color: #1d1d1d;
-  font-family: "Roboto";
-  font-size: 12px;
-  font-weight: 400;
-  margin: 0 0 0 5px;
-  padding: 0;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -98,7 +43,7 @@ section.header .header .contact-info-1 .link-block a {
   width: 16px;
   height: 13px;
   color: #1d1d1d;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
@@ -121,7 +66,7 @@ section.header .header .contact-info-1.left-side .content {
 section.header .header .contact-info-1 .cititle {
   line-height: 19px;
   font-size: 21px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   color: #1d1d1d;
   margin: 20px 0 0 0;
@@ -146,7 +91,7 @@ section.header .header .contact-info-1 .call-now img {
 section.header .header .contact-info-1 .call-now h1 {
   line-height: 28px;
   color: #1d1d1d;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 39px;
   font-weight: 700;
   margin: 0 0 0 3px;
@@ -169,7 +114,7 @@ section.header .header .contact-info-1 .number-form .number-form__price {
   display: none;
   line-height: 14px;
   color: #1d1d1d;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   margin-left: 12px;
@@ -188,7 +133,7 @@ section.header .header .contact-info-2 .link-block a {
   width: 16px;
   height: 13px;
   color: #1d1d1d;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
@@ -207,7 +152,7 @@ section.header .header .contact-info-2 .link-block a.active {
 section.header .header .contact-info-2 .cititle {
   line-height: 19px;
   font-size: 21px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   color: #1d1d1d;
   text-align: right;
@@ -253,7 +198,7 @@ section.header .header .contact-info-2 .call-now .info-price.ru .call-now__title
 section.header .header .contact-info-2 .call-now .call-now__nr-tel {
   line-height: 28px;
   color: #1e1e1e;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 39px;
   font-weight: 700;
   margin-top: 0;
@@ -285,7 +230,7 @@ section.header .header .contact-info-2 .number-form span {
 section.header .header .contact-info-2 .number-form a {
   line-height: 14px;
   font-size: 13px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #00b19f;
@@ -299,7 +244,7 @@ section.header .header .contact-info-2 .number-form span {
   float: right;
   line-height: 14px;
   color: #1d1d1d;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -321,7 +266,7 @@ section.header .header .CallBack {
 section.header .header .CallBack .number-form__callback {
   line-height: 14px;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #00b19f;
   padding: 0;
@@ -329,28 +274,26 @@ section.header .header .CallBack .number-form__callback {
   cursor: pointer;
 }
 
-section.header .header .CallBack .Form {
-  display: none;
-  margin: 0 0 -10px 0;
+section.header .header .CallBack .mask {
+  margin: -1px 0 -10px 0;
 }
 
-section.header .header .CallBack .Form input {
-  width: 150px;
+section.header .header .CallBack .mask input  {
+  width: 50px;
   font-size: 14px;
-  height: 22px;
+  height: 10px;
   padding: 0;
   border: 1px solid #00AE9E;
   text-align: center;
 }
 
-section.header .header .CallBack .Form button {
+section.header .header .CallBack .mask button {
   margin: -1px 0 0 2px;
   padding: 0 5px;
   height: 24px;
   border-radius: 3px;
   background-color: #00b09f;
   cursor: pointer;
-  border: none;
   color: white;
 }
 

@@ -22,7 +22,7 @@ export default function ContulMeu(){
                                     <input type="checkbox" name="Save" id="Save"/>
                                         <label htmlFor="Save" id="SaveLabel">Ține-mă minte</label>
                                 </div>
-                                <button type="submit" className="Button" id="LoginSubmit">Intră</button>
+                                <button type="submit" className="ButtonCont" id="LoginSubmit">Intră</button>
                                 <div className="a">
                                     <a href="/Inregistrare">Înregistrare</a>
                                     <a href="/Recovery">Nu puteți accesa contul?</a>

@@ -44,17 +44,17 @@ function Footer() {
                         <h1>Social Media</h1>
                         <ul className="social-media-block">
                             <li>
-                                <a target="_blank"  href="https://www.facebook.com/Docdoc.md">
+                                <a target={"_blank"} rel="noopener" href="https://www.facebook.com/Docdoc.md">
                                     <FontAwesomeIcon className="facebook" icon={faFacebook}></FontAwesomeIcon>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank"  href="https://www.instagram.com/docdoc.md/?hl=ro">
+                                <a target={"_blank"} rel="noopener" href="https://www.instagram.com/docdoc.md/?hl=ro">
                                     <FontAwesomeIcon className="instagram"  icon={faInstagram}></FontAwesomeIcon>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/channel/UCH3nKaYugxThhwhwuymMkiw/videos?view_as=subscriber">
+                                <a target={"_blank"} rel="noopener" href="https://www.youtube.com/channel/UCH3nKaYugxThhwhwuymMkiw/videos?view_as=subscriber">
                                 <FontAwesomeIcon className="youtube" icon={faYoutube}></FontAwesomeIcon>
                                 </a>
                             </li>

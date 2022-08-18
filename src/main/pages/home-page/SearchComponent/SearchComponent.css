@@ -3,9 +3,6 @@ section.search {
     background-size: cover;
     background-position: center;
 }
-section.search .search {
-    min-height: 500px;
-}
 
 section.search .search.small {
     min-height: 128px;

@@ -15,7 +15,7 @@ export default function AboutPage(){
                         (experiență, calificare, specializare, program de lucru).
                     </p>
                     </div>
-                    <div>
+                    <div className="listDespre">
                     <h1 className="title2">Cum funcționează DOCDOC.md</h1>
                     <ol>
                     <li><span className="span">Alegeți un doctor personal</span>

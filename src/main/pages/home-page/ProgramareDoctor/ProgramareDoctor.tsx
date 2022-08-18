@@ -1,10 +1,20 @@
-import React from "react";
+import React from 'react';
 import './ProgramareDoctor.css';
 import iconline from '../../../../assets/iconline.png';
 import icontriangle from '../../../../assets/icontriangle.png';
 import iconarrowright2 from '../../../../assets/iconarrowright2.png';
 
 export default function ProgramareDoctor(){
+    const show = () =>
+    {
+        const hidden = document.querySelectorAll('.d-none');
+        hidden.forEach(hidden => {
+            hidden.classList.remove('d-none');
+        });
+        // @ts-ignore
+        document.getElementById("hide").classList.add('d-none');
+    }
+
     return(
     <section>
         <div className="program-medic1 container">
@@ -58,43 +68,43 @@ export default function ProgramareDoctor(){
                                     <h1>Chirurg estetician</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/chirurgie-plastica">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Chirurg plastician</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/cosmetologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Cosmetolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/dermatologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Dermatolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/nutritie-si-dietica">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Dietolog, Nutriționist</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/diagnostic-cu-ultrasunet">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Ecografist</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/endocrinologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Endocrinolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/endoscopie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Endoscopist</h1>
@@ -140,43 +150,43 @@ export default function ProgramareDoctor(){
                                     <h1>Hematolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/hepatologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Hepatolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/imagist">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Imagist</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/boli-infectioase-tropicale-si-parazitologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Infecționist</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/medicina-interna">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Internist</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/kinetoterapie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Kinetoterapeut</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/mamologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Mamolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/medic-de-familie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Medic de familie</h1>
@@ -222,43 +232,43 @@ export default function ProgramareDoctor(){
                                     <h1>Oncolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/ortopedie-si-traumatologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Ortoped-traumatolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/otorinolaringologie-orl">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Otorinolaringolog (ORL)</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/pediatrie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Pediatru</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/pneumologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Pneumolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/proctologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Proctolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/psihiatrie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Psihiatru</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/psihologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Psiholog</h1>
@@ -304,43 +314,43 @@ export default function ProgramareDoctor(){
                                     <h1>Sexolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/masaj">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Specialist în masaj</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/stomatologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Stomatolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/terapie-manuala">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Terapeut manual</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none">
                                 <a href="http://www.docdoc.md/ro/doctors/trihologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Triholog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/urologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Urolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/venerologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Venerolog</h1>
                                 </a>
                             </li>
-                            <li className="hidden-item">
+                            <li  className="hidden-item d-none ">
                                 <a href="http://www.docdoc.md/ro/doctors/vertebrologie">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Vertebrolog</h1>
@@ -352,9 +362,9 @@ export default function ProgramareDoctor(){
             </div>
         </div>
 
-        <div className="row program-medic3">
+        <div className="row program-medic3" id="hide">
             <div className="container">
-                <a id="js-open-doctors-list" href="#doctors-list">
+                <a onClick={show} id="js-open-doctors-list" href="#doctors-list">
                     <h1>Vezi toate specialitățile</h1>
                     <img src={iconarrowright2} alt="iconarrowright2"/>
                 </a>

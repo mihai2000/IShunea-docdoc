@@ -16,7 +16,7 @@ export default function TermeniSiConditii(){
                         site-ului  docdoc.md  (&icirc;n continuare - Site), Administrația stabilește
                         condițiile, restricțiile și măsurile de protecție pentru utilizarea Site-ului.
                     </p>
-                    <ol className="list">
+                    <ol className="listTermeni">
                         <li> <span>DISPOZIȚII GENERALE</span>
                         <ol>
                         <li>

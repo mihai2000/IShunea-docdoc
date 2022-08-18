@@ -1,0 +1,372 @@
+.Clinics .Related {
+    margin-top: 30px;
+}
+
+.Clinics .Related .doctors-list-link {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+.Clinics .Related .sidebar-title {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 0 0;
+    text-decoration: none;
+}
+
+.Clinics .Related ul {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.Clinics .Related ul li {
+    margin: 0 0 10px;
+}
+
+.Clinics .Related ul li a {
+    transition: .5s;
+}
+
+.Clinics .Related ul li a .icon {
+    height: 20px;
+    width: 20px;
+    background-image: url(../../../assets/iconarrowrightgray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: inline-block;
+}
+
+.Clinics .Related ul li a .text {
+    width: calc(100% - 27px);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Clinics .Related ul li a .text h3 {
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 0 7px;
+}
+
+.Clinics .h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Clinics .h2 b {
+    font-size: 25px;
+    font-weight: 700;
+    color: #00b19f;
+}
+
+.Clinics h1 {
+    text-align: left;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 20px 100px;
+}
+
+.Clinics h1 b {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00b19f;
+}
+
+.Clinics .Content {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.Clinics .Content .Description p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.Clinics .List .Item {
+    border: 1px solid #e2e2e2;
+    position: relative;
+    margin-bottom: -1px;
+    padding: 15px;
+}
+
+.Clinics .List .Item p {
+    max-height: 205px;
+    overflow: hidden;
+}
+
+.Clinics .List .Item:hover {
+    z-index: 1;
+    border-color: #00AE9E;
+    background: #eefaf9;
+}
+
+.Clinics .List .Item:hover .PriceList li .Bg {
+    background: #eefaf9;
+}
+
+.Clinics .Item {
+    color: black;
+    width: 850px;
+}
+
+.Clinics .Item .Map iframe {
+    border: 0;
+    width: 162px;
+    height: 100px;
+    margin: 5px 0 0 0;
+}
+
+.Clinics .Item .Info {
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.Clinics .Item .Info .Address {
+    font-size: 14px;
+    font-style: italic;
+    border-bottom: 1px dashed gray;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Clinics .Item .Info p {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.Clinics .Item .Logo {
+    float: left;
+    margin: 0 15px 0 0;
+    text-align: center;
+    width: 160px;
+    height: 135px;
+    vertical-align: middle;
+    border: 1px solid #e2e2e2;
+    background: white;
+    position: relative;
+}
+
+.Clinics .Item .Logo img {
+    vertical-align: bottom;
+    display: inline-block;
+    padding: 0;
+    border-radius: 4px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.Clinics .Item h1 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.Clinics .Item h2 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.Clinics .Item .Details {
+    overflow: hidden;
+}
+
+.Clinics .Item .Details .Button {
+    text-transform: none;
+    font-size: 15px;
+    padding: 0 10px 2px 10px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+
+.Clinics .Item .Details .Phone {
+    font-weight: 700;
+    color: #00b19f;
+    font-size: 14px;
+}
+
+.Clinics .Item .Details .Phone a {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    color: #00b19f;
+}
+
+.Clinics .Item .Details .Timing {
+    color: #808080;
+}
+
+.Clinics .Item .Details .Timing li {
+    list-style: none;
+}
+
+.Clinics .Item .Details .Timing strong {
+    display: block;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.Clinics .Item .Details .Timing span {
+    float: right;
+    clear: right;
+}
+
+.Clinics .Item.Full .Info p {
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Clinics .Item.Full .Info p i.More:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 80%);
+    cursor: pointer;
+}
+
+.Clinics .Item.Full .Info p i.More:before {
+    content: '\f13a';
+    position: absolute;
+    left: 46%;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    font: 26px FontAwesome;
+    color: gray;
+    cursor: pointer;
+}
+
+.Clinics .Item.Full .Info p.Active {
+    height: auto;
+}
+
+.Clinics .Item.Full .Info p.Active i.More:after {
+    display: none;
+}
+
+.Clinics .Item.Full .Info p.Active i.More:before {
+    display: none;
+}
+
+.Clinics .Item.Full .Logo {
+    float: left;
+    margin: 0 25px 0 0;
+    text-align: center;
+}
+
+.Clinics .Map .PopupAjaxed {
+    clear: both;
+    min-height: 16px;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+    background: url(../../../assets/IconAddress.png) 0 50% no-repeat;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Clinics .Sort {
+    display: inline-block;
+    border-left: 1px solid silver;
+    padding: 5px 15px;
+    margin: 0 0 0 10px;
+    vertical-align: top;
+}
+.Paging {
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+    margin: 20px 0 40px;
+    padding: 20px 0;
+    text-align: center;
+    color: gray;
+    clear: both;
+}
+
+.Paging a {
+    padding: 0;
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 400;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.Paging a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.Paging .More {
+    padding: 0 10px;
+    background: silver;
+}
+
+.Paging .More:hover {
+    background: #00b19f;
+}
+
+.Paging .Next {
+    color: #1d1d1d;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.Paging .Next:not(.Disabled):hover {
+    color: #00b19f;
+    text-decoration: none;
+}
+
+.Paging .Previous {
+    color: #1d1d1d;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.Paging .Previous:not(.Disabled):hover {
+    color: #00b19f;
+    text-decoration: none;
+}
+
+.Paging .Disabled {
+    cursor: default;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}

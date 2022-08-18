@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './ProgramareServicii.css';
 export default function ProgramareServicii(){
     return(
@@ -15,7 +15,7 @@ export default function ProgramareServicii(){
             </div>
             <div className="container">
                 <div className="form-group row program-service2">
-                    <div className="col-sm-3 col-lg-3 ">
+                    <div className="col-lg-3 col-sm-6 col-xs-12">
                         <ul>
                             <li className="column-title">
                                 <a href="http://www.docdoc.md/ro/service/ecografie">
@@ -75,7 +75,7 @@ export default function ProgramareServicii(){
                             </li>
                         </ul>
                     </div>
-                    <div className="col-sm-3 col-lg-3">
+                    <div className="col-lg-3 col-sm-6 col-xs-12">
                         <ul>
                             <li className="column-title">
                                 <a href="http://www.docdoc.md/ro/service/mamografie-glandele-mamare">
@@ -111,7 +111,7 @@ export default function ProgramareServicii(){
                             </li>
                         </ul>
                     </div>
-                    <div className="col-sm-3 col-lg-3 ">
+                    <div className="col-lg-3 col-sm-6 col-xs-12">
                         <ul>
                             <li className="column-title">
                                 <a href="http://www.docdoc.md/ro/service/radiografie">

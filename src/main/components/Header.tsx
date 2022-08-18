@@ -5,6 +5,20 @@ import './header.css';
 
 
 function Header() {
+    const phone = () =>
+    {
+        // @ts-ignore
+        document.getElementById("disapear").classList.add('d-none');
+        // @ts-ignore
+        document.getElementById("show").classList.remove('d-none');
+    }
+    const text = () =>
+    {
+        // @ts-ignore
+        document.getElementById("disapear").classList.remove('d-none');
+        // @ts-ignore
+        document.getElementById("show").classList.add('d-none');
+    }
     return (
 
         <section className="header">
@@ -29,10 +43,10 @@ function Header() {
                         </a>
                         <div className="number-form">
                             <div className="CallBack" data-action="http://www.docdoc.md/ro/appointments" data-type="1">
-                                <label className="number-form__callback ">sau noi te vom suna înapoi</label>
-                                <div className="Form">
-                                    <input type="text" className="Masked" data-mask="+373 (##) ?###-### "/>
-                                    <button>OK</button>
+                                <label onClick={phone} id="disapear" className="number-form__callback">sau noi te vom suna înapoi</label>
+                                <div className="mask d-none" id="show">
+                                    <input type="text " className="Masked" data-mask="+373 (##) ?###-### "/>
+                                    <button onClick={text}> OK</button>
                                 </div>
                             </div>
                         </div>

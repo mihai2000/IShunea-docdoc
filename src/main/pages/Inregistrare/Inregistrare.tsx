@@ -105,8 +105,8 @@ export default function Inregistrare(){
                                                 <p><input
                                                     type="checkbox"
                                                     className="Locked"
-                                                    // checked="true"
-                                                    // disabled="true"
+                                                    defaultChecked={true}
+                                                    disabled={true}
                                                 />
                                                     Am citit și sunt de acord cu
                                                     <a href="/TermeniSiConditii">Termeni şi
