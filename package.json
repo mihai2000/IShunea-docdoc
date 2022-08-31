@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.0.6",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "inputmask": "^5.0.7",
     "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@types/inputmask": "^5.0.3",
     "@types/jquery": "^3.5.14"
   }
 }

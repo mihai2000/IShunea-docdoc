@@ -318,6 +318,7 @@ section.header .header .contact-info-2.contact-info-2-2 {
 section.header .header .CallBack {
     font-weight: 600;
     display: inline-block;
+
 }
 
 section.header .header .CallBack .number-form__callback {
@@ -332,22 +333,24 @@ section.header .header .CallBack .number-form__callback {
 }
 
 section.header .header .CallBack .Form {
-    display: none;
-    margin: 0 0 -10px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 section.header .header .CallBack .Form input {
     width: 150px;
     font-size: 14px;
+    margin: 0 1px;
     height: 22px;
     padding: 0;
     border: 1px solid #00AE9E;
     text-align: center;
 }
+section.header .header .CallBack .Form input::placeholder {
+    color: black;
+}
 
 section.header .header .CallBack .Form button {
-    margin: -1px 0 0 2px;
-    padding: 0 5px;
     height: 24px;
     border-radius: 3px;
     background-color: #00b09f;

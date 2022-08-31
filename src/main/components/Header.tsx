@@ -2,9 +2,21 @@ import React from "react";
 import logo from "../../assets/docdoc-logo-retina.png";
 import iconphoneheader from "../../assets/iconphoneheader.png";
 import './header.css';
+import $ from 'jquery';
+import Inputmask from 'inputmask';
 
 
 function Header() {
+      $(document).ready(function() {
+    Inputmask().mask(document.querySelectorAll("input"));
+          $("#CallBack").focusin(function() {
+              $("label").toggleClass( "d-none" );
+          });
+          $("input").blur(function() {
+              $(this).toggleClass( "d-none" );
+          });
+     });
+
     const phone = () =>
     {
         // @ts-ignore
@@ -19,6 +31,7 @@ function Header() {
         // @ts-ignore
         document.getElementById("show").classList.add('d-none');
     }
+
     return (
 
         <section className="header">
@@ -42,10 +55,11 @@ function Header() {
                             </div>
                         </a>
                         <div className="number-form">
-                            <div className="CallBack" data-action="http://www.docdoc.md/ro/appointments" data-type="1">
-                                <label onClick={phone} id="disapear" className="number-form__callback">sau noi te vom suna înapoi</label>
-                                <div className="mask d-none" id="show">
-                                    <input type="text " className="Masked" data-mask="+373 (##) ?###-### "/>
+                            <div className="CallBack" id="CallBack">
+                                <label onClick={phone} id="disapear" className="number-form__callback d-none">sau noi te vom suna înapoi</label>
+                                <div className="Form mask " id="show" >
+                                    <input  id="textboxID" type="text " data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"
+                                           placeholder="+373 (__) ___-___" className="form-control"/>
                                     <button onClick={text}> OK</button>
                                 </div>
                             </div>
@@ -54,6 +68,7 @@ function Header() {
                 </div>
             </div>
         </section>
+
     );
 }
 
