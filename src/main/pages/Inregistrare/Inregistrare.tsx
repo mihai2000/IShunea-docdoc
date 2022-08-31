@@ -4,8 +4,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faThumbsUp} from "@fortawesome/free-solid-svg-icons";
 import {faCheckSquare} from "@fortawesome/free-solid-svg-icons";
 import {faChartLine} from "@fortawesome/free-solid-svg-icons";
+import $ from "jquery";
+import Inputmask from "inputmask";
 
 export default function Inregistrare(){
+    $(document).ready(function() {
+        Inputmask().mask(document.querySelectorAll("input"));
+    });
     const proprii = () =>
     {
         // @ts-ignore
@@ -93,9 +98,9 @@ export default function Inregistrare(){
                                                        placeholder="Denumirea clinicii"/>
                                             </div>
                                             <div className="Field">
-                                                <input type="text" name="Phone" id="Phone" value=""
-                                                       placeholder="Telefon" className="Masked"
-                                                       data-mask="+373 (##) ?###-####"/>
+                                                <input   name="phone" id="phone" type="text"
+                                                         data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"
+                                                        placeholder="Telefon"/>
                                             </div>
                                             <div className="Field">
                                                 <input type="text" name="Email" id="Email" value=""
