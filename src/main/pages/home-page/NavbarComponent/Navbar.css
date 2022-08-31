@@ -2,6 +2,10 @@ section.navbar {
     background-color: #00b19f;
     border-bottom: 1px solid #ffffff;
     height: 50px;
+
+}
+body.no-scroll {
+    overflow: hidden;
 }
 
 section.navbar .navbar {
@@ -17,10 +21,8 @@ section.navbar .navbar .buton-group {
 
 section.navbar .navbar .buton-group ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
     height: 50px;
-    margin-left: 300px;
+    margin: 0 250px ;
     padding: 0;
 }
 
@@ -244,6 +246,148 @@ section.navbar .navbar .buton-group .buton-group__sidebar-bg.active {
     }
 
     section.navbar .navbar .buton-group .buton-group__sidebar-bg.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: 998;
+        display: block;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    section.navbar {
+        background-color: #00b19f;
+    }
+    section.navbar .container {
+        height: 50px;
+        overflow: hidden;
+    }
+    section.navbar .container .navbar .buton-group ul {
+        display: none;
+    }
+    section.navbar .container .navbar .buton-group ul li {
+        display: none;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: block;
+        transition: 0.5s;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon .hamburger {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -20px;
+        margin-top: -2.5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon .hamburger:before {
+        top: 13px;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon .hamburger:after {
+        top: -13px;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon .hamburger:before,
+    section.navbar .container .navbar .buton-group .buton-group__icon .hamburger:after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon.active {
+        display: block;
+        left: 270px;
+        z-index: 999;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon.active .hamburger {
+        background-color: transparent;
+        box-shadow: 0 2px 5px transparent;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon.active .hamburger:before {
+        transform: rotate(-45deg);
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon.active .hamburger:after {
+        transform: rotate(45deg);
+    }
+    section.navbar .container .navbar .buton-group .buton-group__icon.active .hamburger:before,
+    section.navbar .container .navbar .buton-group .buton-group__icon.active .hamburger:after {
+        top: 0;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -270px;
+        width: 270px;
+        height: 100%;
+        transition: .5s;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar ul {
+        width: 270px;
+        display: block;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar ul li {
+        list-style: block;
+        font-size: 20px;
+        color: #000;
+        display: block;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar ul li a {
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        border: none;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar-bg {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #00b19f;
+        width: 270px;
+        height: 100%;
+        transition: .5s;
+        z-index: 999;
+        display: block;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar.active ul {
+        width: 270px;
+        display: block;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar.active ul li {
+        list-style: none;
+        font-size: 20px;
+        color: #000;
+        display: block;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar.active ul li a {
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    section.navbar .container .navbar .buton-group .buton-group__sidebar-bg.active {
         position: fixed;
         top: 0;
         left: 0;

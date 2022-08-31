@@ -9,15 +9,15 @@ export default function Inregistrare(){
     const proprii = () =>
     {
         // @ts-ignore
-        document.getElementById("disapear").classList.add('d-none');
+        document.getElementById("Name").classList.remove('Active');
         // @ts-ignore
-        document.getElementById("show").classList.remove('d-none');
+        document.getElementById("Title").classList.add('Active');
     }
     const clinicii = () => {
         // @ts-ignore
-        document.getElementById("disapear").classList.remove('d-none');
+        document.getElementById("Name").classList.add('Active');
         // @ts-ignore
-        document.getElementById("show").classList.add('d-none');
+        document.getElementById("Title").classList.remove('Active');
     }
     return(
         <div className="Main">
@@ -69,16 +69,16 @@ export default function Inregistrare(){
                                   className="Ajaxed">
                                 <h1>Înregistrare</h1>
                                 <div className="radio">
-                                    <div><input  onClick={proprii} type="radio" name="Type" value="1" id="TypeDoctor"/>
-                                    <label htmlFor="TypeDoctor">Eu reprezint interesele proprii</label>
+                                    <div>
+                                        <input onClick={proprii} type="radio" name="Type" value="1" id="TypeDoctor"/>
+                                        <label htmlFor="TypeDoctor">Eu reprezint interesele proprii</label>
                                     </div>
                                     <div>
-                                    <input  onClick={clinicii} type="radio" name="Type"
-                                            value="2" id="TypeClinic"/>
+                                    <input onClick={clinicii} type="radio" name="Type" value="2" id="TypeClinic"/>
                                     <label htmlFor="TypeClinic" > Eu reprezint interesele clinicii</label>
                                     </div>
                                 </div>
-                                        <div id="show">
+                                            <div id="Name" className="">
                                             <div className="Field">
                                                 <input type="text" name="FirstName" id="FirstName" value=""
                                                        placeholder="Prenume"/>
@@ -87,9 +87,9 @@ export default function Inregistrare(){
                                                 <input type="text" name="LastName" id="LastName" value=""
                                                        placeholder="Nume"/>
                                             </div>
-                                        </div>
-                                            <div className="Field d-none" id="disapear">
-                                                <input type="text" name="Title" id="Title" value=""
+                                            </div>
+                                            <div id="Title" className="Field Active" >
+                                                <input type="text" name="Title"  value=""
                                                        placeholder="Denumirea clinicii"/>
                                             </div>
                                             <div className="Field">

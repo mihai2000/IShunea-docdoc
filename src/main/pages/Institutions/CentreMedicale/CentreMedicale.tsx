@@ -2,7 +2,7 @@ import React from "react";
 import '../Institutions.css';
 export default function CentreMedicale() {
     return(
-        <div className="col-md-9">
+        <div className="col-md-9 Center">
                 <h1>Spitale și Centre medicale: <b>15</b></h1>
                 <div className="List TopList">
                     <div className="Content">

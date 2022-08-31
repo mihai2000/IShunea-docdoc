@@ -131,3 +131,11 @@
     text-decoration: underline;
     margin-left: 5px;
 }
+#Title.Active{
+    display: none;
+    border: 1px solid red;
+}
+#Name.Active{
+    display: none;
+}
+

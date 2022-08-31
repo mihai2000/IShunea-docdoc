@@ -5,9 +5,49 @@ import iconvisits from '../../../../assets/iconvisits.png';
 import iconprograms from '../../../../assets/iconprograms.png';
 import  icondocregister from '../../../../assets/icondocregister.png';
 import  iconcoment from '../../../../assets/iconcoment.png';
+import $ from 'jquery';
 import './SearchComponent.css';
 
 export default function SearchComponent(){
+    function selectSearchType() {
+        // @ts-ignore
+        let x = document.getElementById("Type").value;
+        switch (x) {
+            case 'doctor':
+            {
+                $('#Special').toggleClass('Active');
+                $('#SpecialService').toggleClass('Active');
+                break;
+            }
+            case 'service':
+            {
+                $('#Special').toggleClass('Active');
+                $('#SpecialService').toggleClass('Active');
+                break;
+            }
+        }
+    }
+    // function searchButton() {
+    //     // @ts-ignore
+    //     let x = document.getElementById("Type").value;
+    //     switch (x) {
+    //         case 'doctor':
+    //         {
+    //             let URL = $('#Special').data('action') + $('#Special').val() + '/Location/' + $('#Location').val();
+    //             console.log(' ' + $('#Special').data('action'));
+    //             location.href = URL;
+    //             break;
+    //         }
+    //         case 'service':
+    //         {
+    //
+    //             let URL = $('#SpecialService').data('action') + $('#SpecialService').val() + '/Location/' + $('#Location').val();
+    //
+    //             location.href = URL;
+    //             break;
+    //         }
+    //     }
+    // }
     return (
         <section className="search" style={{ backgroundImage: `url(${backgroundimg})` }}>
             <div className="container">
@@ -17,11 +57,11 @@ export default function SearchComponent(){
                         <h2>Caută un<span> doctor bun iar</span> noi te vom programa la el</h2>
                     </div>
                     <div className="group-1">
-                        <select id="Type" /*onChange="selectSearchType()"*/>
-                            <option value="doctor" className="Level">Doctor</option>
-                            <option value="service" className="Level">Servicii</option>
+                        <select id="Type"  onChange={selectSearchType}>
+                            <option value='doctor' className="Level">Doctor</option>
+                            <option value='service' className="Level">Servicii</option>
                         </select>
-                        <select id="Special" data-action="http://www.docdoc.md/ro/doctors/">
+                        <select id="Special"  data-action="http://www.docdoc.md/ro/doctors/">
                             <option value="acupunctura" className="Level">Acupunctor</option>
                             <option value="alergologie" className="Level">Alergolog</option>
                             <option value="andrologie" className="Level">Androlog</option>
@@ -786,7 +826,7 @@ export default function SearchComponent(){
                             <option value="7">Rîșcani</option>
                             <option value="8">Telecentru</option>
                         </select>
-                        <button className="search__button" /*onClick="searchButton()"*/>
+                        <button className="search__button" /*onClick={searchButton}*/>
                             <img src={iconfiind}/>
                                 <i>CAUTĂ</i>
                         </button>

@@ -98,3 +98,50 @@ section.footer .container .footer .link-block {
 section.footer .container .footer .link-block ul {
     margin-bottom: 50px;
 }
+
+@media (max-width: 767px) {
+section.footer .footer {
+    margin-top: 50px;
+}
+section.footer .footer .link-block {
+    text-align: center;
+}
+section.footer .footer .link-block ul {
+    margin-bottom: 0;
+}
+section.footer .footer .icon-block .logofooter {
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -108px;
+    width: 216px;
+}
+section.footer .footer .icon-block h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    section.footer .container .footer {
+        margin-top: 50px;
+    }
+
+    section.footer .container .footer .link-block {
+        min-height: 50px;
+    }
+
+    section.footer .container .footer .link-block ul {
+        margin-bottom: 50px;
+    }
+
+    section.footer .container .footer .icon-block img.logofooter {
+        position: relative;
+        left: 50%;
+        margin: 0 0 0 -108px;
+        width: 216px;
+    }
+
+    section.footer .container .footer .icon-block h1 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}

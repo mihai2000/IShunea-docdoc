@@ -3,7 +3,7 @@ import '../Institutions.css';
 import AMC from '../../../../images/Cosmetologie/amc-centrul-medical-american.png';
 export  default function MedicinaEstetica() {
     return(
-        <div className="col-md-9">
+        <div className="col-md-9 Beauty">
                 <h1>Medicină estetică: <b>1</b></h1>
                 <div className="List TopList">
                     <div className="Content">

@@ -56,3 +56,30 @@ section.program-medic .program-medic .phone-nr2 span {
     text-align: right;
     float: right;
 }
+
+@media (max-width: 767px) {
+    section.program-medic {
+        background-position: top;
+    }
+
+    section.program-medic .program-medic div h1 {
+        text-align: center;
+    }
+
+    section.program-medic .program-medic .phone-nr2 {
+        width: 100%;
+        float: none;
+        position: relative;
+        margin-top: 0;
+    }
+
+    section.program-medic .program-medic span {
+        margin-top: 8px;
+        text-align: center;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    section.program-medic .container .program-medic span {
+        text-align: right;
+    }
+}

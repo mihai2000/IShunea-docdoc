@@ -1,0 +1,77 @@
+.Popup {
+    width: 100%;
+    height: 100%;
+    z-index: 103;
+    text-align: center;
+}
+.Popup .Container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 104;
+    background: none;
+    border: none;
+}
+.Popup .Box {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    z-index: 104;
+    padding: 5px;
+}
+.Popup .Clinics {
+    padding: 20px;
+    text-align: left;
+}
+
+.Popup .Clinics a.Level1 {
+    padding-left: 20px;
+}
+
+.Popup .Clinics a.Level2 {
+    padding-left: 40px;
+    font-style: italic;
+}
+
+.Popup .Clinics ul.List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Popup .Clinics ul.List li.Column {
+    display: block;
+    float: left;
+    width: 18%;
+    margin: 0 2% 0 0;
+    padding: 0;
+}
+
+.Popup .Clinics ul.List li.Column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.Popup .Clinics ul.List li.Column a {
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.Popup .Clinics ul.List li.Column a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.Popup .Clinics ul.List li.Column a.Level0 {
+    font-weight: 600;
+}
+
+.Popup .Clinics ul.List li.Column a {
+    line-height: 15px;
+    margin: 10px 0;
+}

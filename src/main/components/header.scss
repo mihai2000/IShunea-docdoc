@@ -303,3 +303,158 @@ section.header .header .CallBack .Confirm {
   font-size: 12px;
   color: #00b19f;
 }
+@media (max-width: 767px) {
+  section.header {
+    overflow: hidden;
+  }
+  section.header .header .icon {
+    margin: 0;
+    text-align: center;
+  }
+  section.header .header .icon img {
+    width: 70%;
+    left: auto;
+    margin-left: 0;
+  }
+  section.header .header .contact-info-1 {
+    text-align: center;
+  }
+  section.header .header .contact-info-1 .link-block {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: auto;
+    margin-left: auto;
+  }
+  section.header .header .contact-info-1.left-side .content {
+    display: block;
+  }
+  section.header .header .contact-info-1 .cititle {
+    margin-top: 0;
+    text-align: center;
+  }
+  section.header .header .contact-info-1 .call-now {
+    width: auto;
+    position: relative;
+    left: auto;
+    margin-left: 0;
+  }
+  section.header .header .contact-info-1 .number-form {
+    width: auto;
+    position: relative;
+    left: auto;
+    line-height: 24px;
+    text-align: center;
+  }
+  section.header .header .contact-info-1 .number-form label,
+  section.header .header .contact-info-1 .number-form span {
+    display: block;
+    text-align: center;
+  }
+  section.header .header .contact-info-2 {
+    margin: 25px 0 0 0;
+    text-align: center;
+  }
+  section.header .header .contact-info-2 .cititle {
+    text-align: center;
+  }
+  section.header .header .contact-info-2 .call-now {
+    width: auto;
+    position: relative;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.header .header .contact-info-2 .call-now h1 {
+    text-align: center;
+  }
+  section.header .header .contact-info-2 .call-now img {
+    margin-left: 0;
+    float: none;
+    vertical-align: unset;
+  }
+  section.header .header .contact-info-2 .call-now .call-now__nr-tel {
+    margin-left: 3px;
+    float: none;
+  }
+  section.header .header .contact-info-2 .call-now .info-price {
+    vertical-align: bottom;
+  }
+  section.header .header .contact-info-2 .link-block {
+    width: auto;
+    height: auto;
+    left: auto;
+    margin-left: 0;
+  }
+  section.header .header .contact-info-2 .number-form {
+    line-height: 24px;
+  }
+  section.header .header .contact-info-2 .number-form a,
+  section.header .header .contact-info-2 .number-form span {
+    width: 100%;
+    text-align: center;
+  }
+  section.header .header .contact-info-2.contact-info-2-1 {
+    display: block;
+  }
+  section.header .header .contact-info-2.contact-info-2-2 {
+    display: none;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  section.header .container {
+    /* Header */
+    overflow: hidden;
+  }
+  section.header .container .header .icon {
+    margin: 0;
+    min-height: 100px;
+  }
+  section.header .container .header .contact-info-1 .cititle {
+    text-align: right;
+  }
+  section.header .container .header .contact-info-1 .call-now {
+    position: relative;
+    left: auto;
+    margin-left: auto;
+  }
+  section.header .container .header .contact-info-1 .number-form {
+    width: 260px;
+    position: relative;
+    left: auto;
+    margin-left: auto;
+  }
+  section.header .container .header .contact-info-1 .number-form a,
+  section.header .container .header .contact-info-1 .number-form span {
+    display: block;
+    text-align: right;
+  }
+  section.header .container .header .contact-info-1 .number-form a {
+    color: #00b19f;
+  }
+  section.header .container .header .contact-info-2 {
+    margin: 0 0 0 0;
+    min-height: 95px;
+    text-align: right;
+  }
+  section.header .container .header .contact-info-2 .call-now {
+    position: relative;
+    left: auto;
+    margin-left: auto;
+  }
+  section.header .container .header .contact-info-2 .call-now img {
+    margin-left: 0;
+    vertical-align: bottom;
+    float: none;
+  }
+  section.header .container .header .contact-info-2 .call-now .call-now__nr-tel.nr-tel2 {
+    margin-left: 3px;
+  }
+  section.header .container .header .contact-info-2 .number-form a,
+  section.header .container .header .contact-info-2 .number-form span {
+    width: 100%;
+    text-align: right;
+  }
+  section.header .container .header .contact-info-2.contact-info-2-1 {
+    display: block;
+  }
+}

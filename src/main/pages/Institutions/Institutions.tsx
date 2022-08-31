@@ -8,10 +8,6 @@ import Stomatologii from "./Stomatologii/Stomatologii";
 import MedicinaEstetica from "./MedicinaEstetica/MedicinaEstetica";
 import PropsLabs from "./Laborator/PropsLabs";
 export default function Institutions(){
-    const centerTypes = {
-        type:'Laboratoare',
-        number:'2'
-    };
     return(
         <div className="Main">
             <div className="Block">
@@ -19,13 +15,12 @@ export default function Institutions(){
                     <SearchComponentInstitutions/>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-9">
-                                <h1>{centerTypes.type}:<b>{centerTypes.number}</b></h1>
-                                {/*<CentreMedicale></CentreMedicale>*/}
-                                {/*<CentreDiagnostic/>*/}
+                            <div className="filterDiv col-md-9">
+                                <CentreMedicale/>
+                                <CentreDiagnostic/>
                                 <PropsLabs/>
-                                {/*<Stomatologii/>*/}
-                                {/*<MedicinaEstetica/>*/}
+                                <Stomatologii/>
+                                <MedicinaEstetica/>
                                 <div className="Paging Hidden" data-url="http://www.docdoc.md/ro/service//Page/%%PAGE_NUMBER%%"
                                      data-options="Action=Service"
                                      data-current="1"

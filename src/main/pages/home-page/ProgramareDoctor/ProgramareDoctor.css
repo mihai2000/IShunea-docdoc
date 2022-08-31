@@ -130,3 +130,29 @@ section .program-medic3 div a img {
 section .program-medic3 div a:focus {
     outline: 0;
 }
+@media (max-width: 767px) {
+    section.program-medic2 {
+        overflow: hidden;
+    }
+
+    section.program-medic2 .program-medic2 {
+        margin: 0;
+    }
+
+    section.program-medic2 .program-medic2 ul:first-child {
+        margin: 15px 0 0 0;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    section.program-medic2 .container {
+        overflow: hidden;
+    }
+
+    section.program-medic2 .container .program-medic2 {
+        margin: 0;
+    }
+
+    section.program-medic2 .container .program-medic2 ul:first-child {
+        margin: 15px 0 0 0;
+    }
+}

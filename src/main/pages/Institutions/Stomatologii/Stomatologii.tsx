@@ -3,7 +3,7 @@ import '../Institutions.css';
 
 export default function Stomatologii() {
     return(
-        <div className="col-md-9">
+        <div className="col-md-9 Dental">
                 <h1>Stomatologii: <b>1</b></h1>
                 <div className="List TopList">
                     <div className="Content">

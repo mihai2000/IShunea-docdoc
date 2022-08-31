@@ -1,6 +1,18 @@
 import React, {useState} from "react";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import ModalBody from "./Modal/Modal";
 import './ProgramareServicii.css';
 export default function ProgramareServicii(){
+    const values = [true];
+    const [fullscreen, setFullscreen] = useState(true);
+    const [show, setShow] = useState(false);
+
+    // @ts-ignore
+    function handleShow(breakpoint) {
+        setFullscreen(breakpoint);
+        setShow(true);
+    }
     return(
         <section>
             <div className="container">
@@ -212,9 +224,26 @@ export default function ProgramareServicii(){
             <div className="container">
                 <div className="program-service3">
                     <div>
-                        <a className="Active PopupAjaxed" href="http://www.docdoc.md/ro/clinics?Popup=Diagnostics">
-                            <h1>Vezi toate serviciile</h1>
-                            <img src="http://www.docdoc.md/static/img/iconarrowright2.png" alt="iconarrowright2"/>
+                        <a>
+                            {
+                                values.map((v) => (
+                                <Button variant="link" className="btn me-2 mb-2" onClick={() => handleShow(v)}>
+                                    <h1>Vezi toate serviciile</h1>
+                                    <img src="http://www.docdoc.md/static/img/iconarrowright2.png" alt="iconarrowright2"/>
+                                </Button>
+                            ))
+                            }
+                            <Modal show={show}
+                                // @ts-ignore
+                                   fullscreen={fullscreen}
+                                   onHide={() => setShow(false)}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>Domenii</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body >
+                                    <ModalBody/>
+                                </Modal.Body>
+                            </Modal>
                         </a>
                     </div>
                 </div>

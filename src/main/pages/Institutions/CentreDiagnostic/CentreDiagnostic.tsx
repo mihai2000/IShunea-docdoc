@@ -3,7 +3,7 @@ import '../Institutions.css';
 
 export default function CentreDiagnostic() {
     return(
-        <div className="col-md-9">
+        <div className="col-md-9 Diagnostic">
                 <h1>Centre de diagnostic: <b>1</b></h1>
                 <div className="List TopList">
                     <div className="Content">

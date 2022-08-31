@@ -2,8 +2,27 @@ import React from "react";
 import backgroundimg from '../../../../assets/docdoc-fundal.jpg';
 import iconfiind from '../../../../assets/iconfiind.png';
 import './SearchComponentInstitutions.css';
+import $ from "jquery";
 
 export default function SearchComponentInstitutions(){
+    function selectSearchType() {
+        // @ts-ignore
+        let x = document.getElementById("Type").value;
+        switch (x) {
+            case 'doctor':
+            {
+                $('#Special').toggleClass('Active');
+                $('#SpecialService').toggleClass('Active');
+                break;
+            }
+            case 'service':
+            {
+                $('#Special').toggleClass('Active');
+                $('#SpecialService').toggleClass('Active');
+                break;
+            }
+        }
+    }
     return (
         <section className="search" style={{ backgroundImage: `url(${backgroundimg})` }}>
             <div className="container">

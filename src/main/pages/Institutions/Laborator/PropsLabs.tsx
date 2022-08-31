@@ -1,5 +1,8 @@
 import React from "react";
 import Laborator from "./Laborator";
+import AMCCentru from '../../../../images/Lab/amc-centrul-medical-american-sectorul-centru.png';
+import AMCBotanica from '../../../../images/Lab/amc-centrul-medical-american-sectorul-botanica.png';
+
 export default function PropsLabs() {
     const obiect =
          [
@@ -9,7 +12,8 @@ export default function PropsLabs() {
             text:'American Medical Center este o clinică multidisciplinară, axată pe medicina\n' +
                 'personalizată, ce asigură cele mai moderne metode de diagnostic și\n' +
                 'tratament. Clinica AMC vine în întâmpinarea pacienților\n' +
-                'cu soluții eficiente, adaptate individual pentru orice problemă de sănătate.'
+                'cu soluții eficiente, adaptate individual pentru orice problemă de sănătate.',
+            img:{AMCBotanica}
         },
         {
             title:"AMC Centrul Medical American, Sectorul Centru",
@@ -18,11 +22,13 @@ export default function PropsLabs() {
                 'personalizată, ce asigură cele mai moderne metode de diagnostic ș}\n' +
                 'tratament. Clinica AMC vine în întâmpinarea pacienților\n' +
                 'cu soluții eficiente, adaptate individual pentru orice problemă de sănătate.',
+            img:{AMCCentru}
         }
         ];
     return(
         <div>
-            {obiect.map(value => (<Laborator title={value.title} address={value.address} text={value.text} ></Laborator>))}
+            {obiect.map(value => (<Laborator title={value.title} address={value.address} text={value.text}
+            img={value.img}></Laborator>))}
         </div>
     );
 }
