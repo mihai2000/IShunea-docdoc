@@ -98,7 +98,7 @@ export default function Inregistrare(){
                                                        placeholder="Denumirea clinicii"/>
                                             </div>
                                             <div className="Field">
-                                                <input   name="phone" id="phone" type="text"
+                                                <input    required name="phone" id="phone" type="text"
                                                          data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"
                                                         placeholder="Telefon"/>
                                             </div>

@@ -276,6 +276,7 @@ section.header .header .CallBack .number-form__callback {
 
 section.header .header .CallBack .mask {
   margin: -1px 0 -10px 0;
+  border: 1px solid red;
 }
 
 section.header .header .CallBack .mask input  {
@@ -283,13 +284,14 @@ section.header .header .CallBack .mask input  {
   font-size: 14px;
   height: 10px;
   padding: 0;
-  border: 1px solid #00AE9E;
+  border: 1px solid black;
   text-align: center;
 }
 
 section.header .header .CallBack .mask button {
   margin: -1px 0 0 2px;
   padding: 0 5px;
+  font-weight: 700;
   height: 24px;
   border-radius: 3px;
   background-color: #00b09f;

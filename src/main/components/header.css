@@ -343,7 +343,7 @@ section.header .header .CallBack .Form input {
     margin: 0 1px;
     height: 22px;
     padding: 0;
-    border: 1px solid #00AE9E;
+    border: 1px solid black;
     text-align: center;
 }
 section.header .header .CallBack .Form input::placeholder {

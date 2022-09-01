@@ -58,7 +58,8 @@ function Header() {
                             <div className="CallBack" id="CallBack">
                                 <label onClick={phone} id="disapear" className="number-form__callback">sau noi te vom suna înapoi</label>
                                 <div className="Form mask d-none" id="show" >
-                                    <input  id="textboxID" type="text " data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"
+                                    <input  id="phoneNumber" type="text " data-masked=""
+                                            data-inputmask="'mask': '+373 (99) 999-999'"
                                            placeholder="+373 (__) ___-___" className="form-control"/>
                                     <button onClick={text}> OK</button>
                                 </div>
