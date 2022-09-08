@@ -35,7 +35,7 @@ export default function ProgramareDoctor(){
                     <div className="col-lg-3 col-sm-6 col-xs-12">
                         <ul>
                             <li className="">
-                                <a href="http://www.docdoc.md/ro/doctors/acupunctura">
+                                <a href="/Doctors">
                                     <div className="program-medic2__icon"></div>
                                     <h1>Acupunctor</h1>
                                 </a>

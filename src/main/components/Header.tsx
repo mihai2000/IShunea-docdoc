@@ -37,14 +37,15 @@ function Header() {
         <section className="header">
             <div className="container">
                 <div className="row header">
-                    <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon">
+                    <div className="icon">
                                 <a href="/">
                                     <img src={logo} className="logo" alt="logo" />
                                 </a>
                     </div>
-                    <div  className="col-lg-4 col-md-4 col-sm-6 col-xs-12 contact-info-2 contact-info-1 contact-info-2-2">
-                        <div className="link-block"><a href="http://www.docdoc.md/ro" className="active">ro</a><a
-                            href="http://www.docdoc.md/ru" className="">ru</a>
+                    <div  className="contact-info-1 contact-info-2-2">
+                        <div className="link-block">
+                            <a href="http://www.docdoc.md/ro" className="active">ro</a>
+                            <a href="http://www.docdoc.md/ru" className="">ru</a>
                         </div>
 
                         <h1 className="cititle">Programează-te la doctor</h1>

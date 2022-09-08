@@ -12,7 +12,7 @@ function Footer() {
         <section className="footer">
             <div className="container">
                 <div className="row footer">
-                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 icon-block">
+                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 icon-block-footer">
                         <img src={logofooter} alt="logofooter" className="logofooter"/>
                             <h1>
                                     Prin sistemul nostru online, procesul de căutare și programare a unei consultații
@@ -22,7 +22,7 @@ function Footer() {
                                     lor.
                             </h1>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block">
+                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
                         <h1>Navigare</h1>
                         <ul>
                             <li><Link to="/Despre">Despre docdoc.md</Link></li>
@@ -33,14 +33,14 @@ function Footer() {
                             <li><Link to="/Contacte">Contacte</Link></li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block">
+                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
                         <h1>Link-uri</h1>
                         <ul>
                             <li><a href="/Boli" className="Diseases">Ghid de boli</a></li>
                             <li><a href="/Biblioteca" className="Library">Biblioteca medicală</a></li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block">
+                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
                         <h1>Social Media</h1>
                         <ul className="social-media-block">
                             <li>
@@ -60,7 +60,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 sign-in-block link-block">
+                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 sign-in-block link-block-footer">
                         <h1>Doctori și clinici</h1>
                         <ul>
                             <li><a href="/ContulMeu">Cabinetul meu</a></li>

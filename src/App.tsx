@@ -27,8 +27,11 @@ import Laborator from "./main/pages/Institutions/Laborator/Laborator";
 import PropsLabs from "./main/pages/Institutions/Laborator/PropsLabs";
 import Stomatologii from "./main/pages/Institutions/Stomatologii/Stomatologii";
 import MedicinaEstetica from "./main/pages/Institutions/MedicinaEstetica/MedicinaEstetica";
+//Doctors
+import Doctors from "./main/pages/Doctors/Doctors";
 import {Routes, Route, Router} from "react-router-dom";
 function App() {
+    
   return (
         <div>
             <Header></Header>
@@ -55,6 +58,7 @@ function App() {
                     <Route path=":Stomatologie" element={<Stomatologii/>}/>
                     <Route path=":Cosmetologie" element={<MedicinaEstetica/>}/>
 ]                </Route>
+                    <Route path="Doctors" element={<Doctors/>}/>
             </Routes>
             {/*</Router>*/}
             <Footer></Footer>

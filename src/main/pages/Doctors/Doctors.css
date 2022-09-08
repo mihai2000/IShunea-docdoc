@@ -1,0 +1,325 @@
+section.doc-info {
+    margin-bottom: 40px;
+}
+
+section.doc-info {
+    display: flex;
+    justify-content: center;
+}
+
+section.doc-info .doc-info__content .doc-info-foto {
+    float: left;
+    width: 37.5%;
+    position: relative;
+    left: 12%;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-foto {
+    width: 263px;
+    height: 300px;
+    background-image: url("../../../images/viorica-cucobco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+section.doc-info .doc-info__content .doc-info-foto .doc-button {
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 7px;
+    border-radius: 3px;
+    border: 1px solid #00b19f;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-button .phone-number {
+    color: #dc4593;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    vertical-align: bottom;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-button img,
+section.doc-info .doc-info__content .doc-info-foto .doc-button h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-button img {
+    margin: 8px 0 8px 0;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-button h1 {
+    color: #00b19f;
+    font-family: "PT Sans";
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 85px;
+    margin: 0;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-button:hover {
+    box-shadow: 0 0 9px 1px rgba(0, 175, 159, 0.38);
+    cursor: pointer;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-status {
+    text-align: center;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-status h1,
+section.doc-info .doc-info__content .doc-info-foto .doc-status h2,
+section.doc-info .doc-info__content .doc-info-foto .doc-status h3 {
+    margin: 10px auto 0 auto;
+    line-height: 16px;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-status h1 {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-status h3.disponibil {
+    color: #00b09f;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-status h3.vacanta {
+    color: #717171;
+}
+
+section.doc-info .doc-info__content .doc-info-foto .doc-status h3.nedisponibil {
+    color: #dc4593;
+}
+
+section.doc-info .doc-info__content .doc-info-text {
+    float: left;
+    width: 62.5%;
+    padding: 0 15px 0 15px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats i {
+    font-family: "PT Sans";
+    font-size: 12px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats p {
+    margin: 5px 0;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info,
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats {
+    min-height: 50px;
+    float: left;
+    margin: 42px 0 0 0;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info {
+    width: 60%;
+    padding: 0 15px 0 15px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info h1 {
+    margin: 0;
+    line-height: 20px;
+    color: #00b19f;
+    font-family: "PT Sans";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info h2 {
+    margin: 12px 0 0 0;
+    line-height: 16px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info h3 {
+    margin: 20px 0 0 0;
+    line-height: 16px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info .basic-info-button {
+    height: 40px;
+    width: 260px;
+    margin: 23px 0 0 0;
+    border-radius: 3px;
+    background-color: #00b09f;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: left;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info .basic-info-button div img,
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info .basic-info-button div h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info .basic-info-button div img {
+    margin: 0;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info .basic-info-button div h1 {
+    line-height: 14px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto 0 10px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info .basic-info-button:hover {
+    box-shadow: 0 0 9px 1px rgba(0, 175, 159, 0.38);
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-info h4 {
+    margin: 15px 0 0 0;
+    line-height: 16px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats {
+    width: 40%;
+    padding: 0 5px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .comments-rating .basic-stats-coments,
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .comments-rating .basic-stats-rating {
+    min-height: 50px;
+    float: left;
+    width: 50%;
+    padding: 0 15px 0 15px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .comments-rating .basic-stats-coments h1 {
+    margin: 0;
+    line-height: 32px;
+    color: #00b09f;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+    text-align: right;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .comments-rating .basic-stats-coments h2 {
+    margin: 8px 0 0 0;
+    line-height: 14px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: right;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .comments-rating .basic-stats-rating h1 {
+    margin: 0;
+    line-height: 32px;
+    color: #00b09f;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+    text-align: right;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .comments-rating .basic-stats-rating h2 {
+    margin: 8px 0 0 0;
+    line-height: 14px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: right;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.basic-stats-title {
+    padding: 0 15px 0 15px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.basic-stats-title h1 {
+    margin: 18px 0 0 0;
+    line-height: 12px;
+    height: 12px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule {
+    margin: 5px 0 0 0;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule .schedule-day,
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule .schedule-hour {
+    min-height: 50px;
+    width: 50%;
+    float: left;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule .schedule-day ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule .schedule-day ul li {
+    margin: 6px 0 0 0;
+    line-height: 9px;
+    color: #1d1d1d;
+    font-family: "PT Sans";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule .schedule-hour ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section.doc-info .doc-info__content .doc-info-text .basic-info-stats .basic-stats .row.schedule .schedule-hour ul li {
+    margin: 6px 0 0 0;
+    line-height: 9px;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: 0.2px;
+}
+
+section.doc-info .doc-info__content .doc-info-text .primary-consult h1 {
+    margin: 5px 0 0 0;
+    line-height: 16px;
+    font-size: 16px;
+    color: #1d1d1d;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+}
+
+section.doc-info .doc-info__content .doc-info-text .primary-consult h1.sub-h {
+    margin: 5px 0 0 0;
+    font-weight: 400;
+}

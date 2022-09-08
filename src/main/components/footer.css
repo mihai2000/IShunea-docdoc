@@ -13,54 +13,66 @@
 .youtube{
     color: red;
 }
+section.footer .container .footer .link-block-footer {
+    min-height: 50px;
+}
 section.footer{
-    display: flex;
+    padding-top:43px;
     min-height: 200px;
     background-color:#eeeeee;
 }
-section.footer .link-block.sign-in-block ul li a {
+section.footer .icon-block-footer h1 {
+    line-height: 19px;
+    color: #5c5858;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0 0 0;
+}
+section.footer .footer .icon-block-footer .logofooter {
+    position: relative;
+    margin: 0;
+    width: 230px;
+}
+section.footer .link-block-footer.sign-in-block ul li a {
     font-weight: 700;
 }
-section.footer .link-block{
-    margin-left:50px;
-    margin-right: -80px;
-}
-section.footer .link-block h1 {
-    line-height: 20px;
+section.footer .link-block-footer h1 {
     color: #5c5858;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    margin: 5px 0 20px 5px;
-
+    margin: 5px 0 26px 5px;
 }
-
-section.footer .link-block ul {
+section.footer .link-block-footer ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 10px 5px;
+    margin: 0 0 100px 5px;
+}
+section.footer .link-block ul li {
+    margin: 0 0 10px 0;
 }
 
-section.footer .link-block ul li a {
+section.footer .link-block-footer ul li a {
     color: #5c5858;
+    line-height: 15px;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
 }
 
-section.footer .link-block ul li a:hover,
-section.footer .link-block ul li a:focus {
+section.footer .link-block-footer ul li a:hover,
+section.footer .link-block-footer ul li a:focus {
     outline: 0;
     text-decoration: underline;
 }
 
-section.footer .link-block ul.social-media-block li {
+section.footer .link-block-footer ul.social-media-block li {
     display: inline-block;
-    margin-right: 10px;
 }
 
-section.footer .link-block ul.social-media-block li a {
+section.footer .link-block-footer ul.social-media-block li a {
     width: 24px;
     height: 24px;
     position: relative;
@@ -69,79 +81,50 @@ section.footer .link-block ul.social-media-block li a {
     background-size: contain;
     background-repeat: no-repeat;
 }
-section.footer .icon-block h1 {
-    line-height: 19px;
-    color: #5c5858;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 30px 50px;
-    width: 100%;
-}
-section.footer .footer {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-}
-section.footer .footer .icon-block .logofooter {
-    position: relative;
-    left: 15%;
-    margin: 0;
-    width: 230px;
-}
-section.footer .container .footer {
-    margin-top: 50px;
-}
-section.footer .container .footer .link-block {
-    min-height: 50px;
-}
-section.footer .container .footer .link-block ul {
-    margin-bottom: 50px;
-}
-
-@media (max-width: 767px) {
-section.footer .footer {
-    margin-top: 50px;
-}
-section.footer .footer .link-block {
-    text-align: center;
-}
-section.footer .footer .link-block ul {
-    margin-bottom: 0;
-}
-section.footer .footer .icon-block .logofooter {
-    position: relative;
-    left: 50%;
-    margin: 0 0 0 -108px;
-    width: 216px;
-}
-section.footer .footer .icon-block h1 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-}
 @media (max-width: 991px) and (min-width: 768px) {
     section.footer .container .footer {
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
 
-    section.footer .container .footer .link-block {
+    section.footer .container .footer .link-block-footer {
         min-height: 50px;
     }
 
-    section.footer .container .footer .link-block ul {
+    section.footer .container .footer .link-block-footer ul {
         margin-bottom: 50px;
     }
+    section.footer .container .footer .link-block-footer ul li {
+        margin-top: 0;
+    }
 
-    section.footer .container .footer .icon-block img.logofooter {
+    section.footer .container .footer .icon-block-footer img.logofooter {
         position: relative;
-        left: 50%;
-        margin: 0 0 0 -108px;
         width: 216px;
     }
 
-    section.footer .container .footer .icon-block h1 {
+    section.footer .container .footer .icon-block-footer h1 {
         text-align: center;
         margin-bottom: 25px;
+    }
+}
+@media (max-width: 767px) {
+    section.footer .footer {
+        margin-top: 50px;
+    }
+    section.footer .footer .link-block-footer {
+        text-align: center;
+    }
+    section.footer .footer .link-block-footer ul {
+        margin-bottom: 0;
+    }
+    section.footer .footer .icon-block-footer .logofooter {
+        text-align: center;
+        margin: 0 150px;
+        width: 216px;
+    }
+    section.footer .footer .icon-block-footer h1 {
+        text-align: center;
+        width: 130%;
+        margin:25px -80px;
     }
 }

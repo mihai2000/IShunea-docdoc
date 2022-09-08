@@ -17,7 +17,7 @@ export default function CentreDiagnostic() {
                                                 alt="Excellence Centru Medical "/>
                                         </a>
                                         <div className="Map">
-                                            <iframe
+                                            <iframe title="map"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.2721047494992!2d28.82740332886392!3d46.98922167324997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe06982c767f80c8e!2sExcellence!5e0!3m2!1sen!2s!4v1478782681486"
                                                 width="162"
                                                 height="100" className="Map"></iframe>
