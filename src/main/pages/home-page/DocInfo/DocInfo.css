@@ -50,73 +50,88 @@ section.doc-info-sistem .doc-info-sistem .price h1 {
 
 
 @media (max-width: 767px) {
-section.doc-info-sistem .doc-info-sistem div img,
-section.doc-info-sistem .doc-info-sistem div h1 {
-    display: block;
+    section.doc-info-sistem .doc-info-sistem div img,
+    section.doc-info-sistem .doc-info-sistem div h1 {
+        display: block;
+    }
+
+    section.doc-info-sistem .doc-info-sistem div img {
+        vertical-align: inherit;
+    }
+
+    section.doc-info-sistem .doc-info-sistem div h1 {
+        line-height: 20px;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .positions {
+        margin: 0;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .positions img {
+        position: relative;
+        left: 50%;
+        margin-left: -18.5px;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .positions h1 {
+        width: 100%;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .positions h2 {
+        width: 100%;
+        margin: 15px 0 0 0;
+        text-align: center;
+        min-height: 30px;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .rating {
+        margin: 20px 0 0 0;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .rating img {
+        position: relative;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .rating h1 {
+        width: 100%;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .rating h2 {
+        width: 100%;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .price {
+        margin: 20px 0 50px 0;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .price img {
+        position: relative;
+        left: 50%;
+        margin-left: -27.5px;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .price h1 {
+        min-height: 20px;
+        width: 100%;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+
+    section.doc-info-sistem .doc-info-sistem .price h2 {
+        width: 100%;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
 }
-section.doc-info-sistem .doc-info-sistem div img {
-    vertical-align: inherit;
-}
-section.doc-info-sistem .doc-info-sistem div h1 {
-    line-height: 20px;
-}
-section.doc-info-sistem .doc-info-sistem .positions {
-    margin: 0;
-}
-section.doc-info-sistem .doc-info-sistem .positions img {
-    position: relative;
-    left: 50%;
-    margin-left: -18.5px;
-}
-section.doc-info-sistem .doc-info-sistem .positions h1 {
-    width: 100%;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-section.doc-info-sistem .doc-info-sistem .positions h2 {
-    width: 100%;
-    margin: 15px 0 0 0;
-    text-align: center;
-    min-height: 30px;
-}
-section.doc-info-sistem .doc-info-sistem .rating {
-    margin: 20px 0 0 0;
-}
-section.doc-info-sistem .doc-info-sistem .rating img {
-    position: relative;
-    left: 50%;
-    margin-left: -25px;
-}
-section.doc-info-sistem .doc-info-sistem .rating h1 {
-    width: 100%;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-section.doc-info-sistem .doc-info-sistem .rating h2 {
-    width: 100%;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-section.doc-info-sistem .doc-info-sistem .price {
-    margin: 20px 0 50px 0;
-}
-section.doc-info-sistem .doc-info-sistem .price img {
-    position: relative;
-    left: 50%;
-    margin-left: -27.5px;
-}
-section.doc-info-sistem .doc-info-sistem .price h1 {
-    min-height: 20px;
-    width: 100%;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-section.doc-info-sistem .doc-info-sistem .price h2 {
-    width: 100%;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-}
+
 @media (max-width: 991px) and (min-width: 768px) {
     section.doc-info-sistem .container .doc-info-sistem .price {
         margin-left: 25%;

@@ -1,11 +1,9 @@
 import React from "react";
 import './footer.css';
-import {Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook} from "@fortawesome/free-brands-svg-icons";
-import {faInstagram} from "@fortawesome/free-brands-svg-icons";
-import {faYoutube} from "@fortawesome/free-brands-svg-icons";
-import  logofooter from '../../assets/logofooter.png';
+import {faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import logofooter from '../../assets/logofooter.png';
 
 function Footer() {
     return (
@@ -14,13 +12,13 @@ function Footer() {
                 <div className="row footer">
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 icon-block-footer">
                         <img src={logofooter} alt="logofooter" className="logofooter"/>
-                            <h1>
-                                    Prin sistemul nostru online, procesul de căutare și programare a unei consultații
-                                    medicale se desfășoară în timp real, eficient, accesibil și rapid. Pacienții au
-                                    acces mult mai ușor la cei mai buni profesioniști din domeniul sănătății și la
-                                    datele activității
-                                    lor.
-                            </h1>
+                        <h1>
+                            Prin sistemul nostru online, procesul de căutare și programare a unei consultații
+                            medicale se desfășoară în timp real, eficient, accesibil și rapid. Pacienții au
+                            acces mult mai ușor la cei mai buni profesioniști din domeniul sănătății și la
+                            datele activității
+                            lor.
+                        </h1>
                     </div>
                     <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
                         <h1>Navigare</h1>
@@ -50,12 +48,13 @@ function Footer() {
                             </li>
                             <li>
                                 <a target={"_blank"} rel="noopener" href="https://www.instagram.com/docdoc.md/?hl=ro">
-                                    <FontAwesomeIcon className="instagram"  icon={faInstagram}></FontAwesomeIcon>
+                                    <FontAwesomeIcon className="instagram" icon={faInstagram}></FontAwesomeIcon>
                                 </a>
                             </li>
                             <li>
-                                <a target={"_blank"} rel="noopener" href="https://www.youtube.com/channel/UCH3nKaYugxThhwhwuymMkiw/videos?view_as=subscriber">
-                                <FontAwesomeIcon className="youtube" icon={faYoutube}></FontAwesomeIcon>
+                                <a target={"_blank"} rel="noopener"
+                                   href="https://www.youtube.com/channel/UCH3nKaYugxThhwhwuymMkiw/videos?view_as=subscriber">
+                                    <FontAwesomeIcon className="youtube" icon={faYoutube}></FontAwesomeIcon>
                                 </a>
                             </li>
                         </ul>

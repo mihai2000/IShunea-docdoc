@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ModalBody from "./Modal/Modal";
 import './ProgramareServicii.css';
-export default function ProgramareServicii(){
+
+export default function ProgramareServicii() {
     const values = [true];
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
@@ -13,15 +14,17 @@ export default function ProgramareServicii(){
         setFullscreen(breakpoint);
         setShow(true);
     }
-    return(
+
+    return (
         <section>
             <div className="container">
                 <div className="program-service1">
                     <h1>Programare la servicii de diagnostic</h1>
                     <div className="figure">
                         <img className="line1" src="http://www.docdoc.md/static/img/iconline.png" alt="line"/>
-                            <img className="triangle" src="http://www.docdoc.md/static/img/icontriangle.png" alt="triangle"/>
-                                <img className="line2" src="http://www.docdoc.md/static/img/iconline.png" alt="line"/>
+                        <img className="triangle" src="http://www.docdoc.md/static/img/icontriangle.png"
+                             alt="triangle"/>
+                        <img className="line2" src="http://www.docdoc.md/static/img/iconline.png" alt="line"/>
                     </div>
                 </div>
             </div>
@@ -227,11 +230,12 @@ export default function ProgramareServicii(){
                         <a href="#">
                             {
                                 values.map((v) => (
-                                <Button variant="link" className="btn me-2 mb-2" onClick={() => handleShow(v)}>
-                                    <h1>Vezi toate serviciile</h1>
-                                    <img src="http://www.docdoc.md/static/img/iconarrowright2.png" alt="iconarrowright2"/>
-                                </Button>
-                            ))
+                                    <Button variant="link" className="btn me-2 mb-2" onClick={() => handleShow(v)}>
+                                        <h1>Vezi toate serviciile</h1>
+                                        <img src="http://www.docdoc.md/static/img/iconarrowright2.png"
+                                             alt="iconarrowright2"/>
+                                    </Button>
+                                ))
                             }
                             <Modal show={show}
                                 // @ts-ignore
@@ -240,7 +244,7 @@ export default function ProgramareServicii(){
                                 <Modal.Header closeButton>
                                     <Modal.Title>Domenii</Modal.Title>
                                 </Modal.Header>
-                                <Modal.Body >
+                                <Modal.Body>
                                     <ModalBody/>
                                 </Modal.Body>
                             </Modal>

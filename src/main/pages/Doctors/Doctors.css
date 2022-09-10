@@ -1,17 +1,14 @@
 section.doc-info {
-    margin-bottom: 40px;
-}
-
-section.doc-info {
+    margin: 40px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 section.doc-info .doc-info__content .doc-info-foto {
     float: left;
     width: 37.5%;
     position: relative;
-    left: 12%;
+    left: 10%;
 }
 
 section.doc-info .doc-info__content .doc-info-foto .doc-foto {
@@ -22,6 +19,7 @@ section.doc-info .doc-info__content .doc-info-foto .doc-foto {
     background-size: cover;
     background-position: top center;
 }
+
 section.doc-info .doc-info__content .doc-info-foto .doc-button {
     height: auto;
     text-align: center;

@@ -1,9 +1,9 @@
 import React from "react";
-import  iconphonewhite from '../../../../assets/iconphonewhite.png';
+import iconphonewhite from '../../../../assets/iconphonewhite.png';
 import './Contact.css';
 
-export default function Contact(){
-    return(
+export default function Contact() {
+    return (
         <section className="program-medic">
             <div className="container">
                 <div className="row program-medic">
@@ -14,7 +14,7 @@ export default function Contact(){
                         <div className="phone-nr2">
                             <a href="tel:022600903">
                                 <h1>0(22)-600-903</h1>
-                            <img src={iconphonewhite} alt="iconphonewhite"/>
+                                <img src={iconphonewhite} alt="iconphonewhite"/>
                             </a>
                             <span>Serviciu gratuit</span>
                         </div>

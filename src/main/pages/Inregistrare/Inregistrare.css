@@ -36,6 +36,7 @@
 .Account.SignUp form.Confirmed *:not(.Confirm) {
     display: none;
 }
+
 .Account a {
     text-decoration: underline;
     color: #333;
@@ -49,6 +50,7 @@
     text-decoration: none;
     border: none;
 }
+
 .Account form {
     position: relative;
     z-index: 1;
@@ -66,6 +68,7 @@
 .Account .Field input {
     margin: 0 5px 15px 0;
 }
+
 .Account .Arguments {
     display: inline-block;
     margin: 0 20px 0 100px;
@@ -93,20 +96,24 @@
     position: relative;
     margin: -5px 0 0 20px;
 }
+
 .Account .Arguments p {
     font-size: 15px;
 }
-.Account .Arguments div>p {
+
+.Account .Arguments div > p {
     margin: 0 0 30px 20px;
     width: 85%;
 }
+
 .Account .Arguments .Icon1,
 .Account .Arguments .Icon2,
-.Account .Arguments .Icon3{
+.Account .Arguments .Icon3 {
     color: #f54d07;
     width: 40px;
     height: 40px;
 }
+
 .basic-info-button {
     height: 40px;
     margin: 23px 0 0 0;
@@ -117,25 +124,30 @@
     color: white;
     padding: 0 20px;
 }
-.b{
+
+.b {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 15px 0;
 }
-.radio{
+
+.radio {
     margin: 5px 0 15px 0;
     line-height: 18px;
 }
-.checkTermeni p a{
+
+.checkTermeni p a {
     text-decoration: underline;
     margin-left: 5px;
 }
-#Title.Active{
+
+#Title.Active {
     display: none;
     border: 1px solid red;
 }
-#Name.Active{
+
+#Name.Active {
     display: none;
 }
 

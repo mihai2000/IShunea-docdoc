@@ -4,12 +4,12 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ModalBody from "./Modal/Modal";
 
-export default function Doctors(){
+export default function Doctors() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    return(
+    return (
         <section className="row doc-info">
             <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 doc-info__content">
                 <div className="row">
@@ -27,11 +27,12 @@ export default function Doctors(){
                                     <div>
                                         <img src="http://www.docdoc.md/static/img/icontrianglewhite.png"
                                              alt="iconphonewhite"/>
-                                            <h1>Programare la consultație</h1>
+                                        <h1>Programare la consultație</h1>
                                     </div>
                                 </Button>
                                 <Modal show={show} onHide={handleClose} animation={true}>
                                     <Modal.Header closeButton>
+                                        <h1>Contact Us</h1>
                                     </Modal.Header>
                                     <Modal.Body>
                                         <ModalBody/>

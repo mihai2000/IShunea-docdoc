@@ -4,27 +4,26 @@ import iconfiind from '../../../../assets/iconfiind.png';
 import './SearchComponentInstitutions.css';
 import $ from "jquery";
 
-export default function SearchComponentInstitutions(){
+export default function SearchComponentInstitutions() {
     function selectSearchType() {
         // @ts-ignore
         let x = document.getElementById("Type").value;
         switch (x) {
-            case 'doctor':
-            {
+            case 'doctor': {
                 $('#Special').toggleClass('Active');
                 $('#SpecialService').toggleClass('Active');
                 break;
             }
-            case 'service':
-            {
+            case 'service': {
                 $('#Special').toggleClass('Active');
                 $('#SpecialService').toggleClass('Active');
                 break;
             }
         }
     }
+
     return (
-        <section className="search" style={{ backgroundImage: `url(${backgroundimg})` }}>
+        <section className="search" style={{backgroundImage: `url(${backgroundimg})`}}>
             <div className="container">
                 <div className="row search small">
                     <div className="group-1">
@@ -54,7 +53,8 @@ export default function SearchComponentInstitutions(){
                             <option value="hematologie" className="Level">Hematolog</option>
                             <option value="hepatologie" className="Level">Hepatolog</option>
                             <option value="imagist" className="Level">Imagist</option>
-                            <option value="boli-infectioase-tropicale-si-parazitologie" className="Level">Infecționist</option>
+                            <option value="boli-infectioase-tropicale-si-parazitologie" className="Level">Infecționist
+                            </option>
                             <option value="medicina-interna" className="Level">Internist</option>
                             <option value="kinetoterapie" className="Level">Kinetoterapeut</option>
                             <option value="mamologie" className="Level">Mamolog</option>
@@ -88,7 +88,8 @@ export default function SearchComponentInstitutions(){
                         </select>
                         <select id="SpecialService" className="Active" data-action="http://www.docdoc.md/ro/service/">
                             <option value="ecografie" className="Level0">Ultrasonografie</option>
-                            <option value="neurosonografia-prin-fontanela" className="Level1">neurosonografia prin fontanelă
+                            <option value="neurosonografia-prin-fontanela" className="Level1">neurosonografia prin
+                                fontanelă
                             </option>
                             <option value="tesuturile-moi" className="Level1">ecografie țesuturile moi</option>
                             <option value="ecografie-glanda-tiroida" className="Level1">ecografie glanda tiroidă
@@ -799,7 +800,7 @@ export default function SearchComponentInstitutions(){
                         </select>
                         <button className="search__button" /*onClick="searchButton()"*/>
                             <img src={iconfiind} alt=""/>
-                                <i>CAUTĂ</i>
+                            <i>CAUTĂ</i>
                         </button>
                     </div>
                 </div>

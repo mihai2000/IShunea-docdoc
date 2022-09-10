@@ -1,7 +1,8 @@
-.Main{
+.Main {
     font-family: "PT Sans", sans-serif;
 }
-.title{
+
+.title {
     height: 32px;
     text-align: center;
     color: #1d1d1d;
@@ -10,102 +11,121 @@
     line-height: 32px;
     margin: 30px 0 20px 0;
 }
-h1:nth-child(2){
+
+h1:nth-child(2) {
     font-weight: 700;
 }
-.ImageRight{
+
+.ImageRight {
     border: 1px solid black;
     float: right;
     margin-right: 180px;
-    width:550px;
+    width: 550px;
 }
-.img1{
+
+.img1 {
     margin-top: -310px;
-    height:324px;
+    height: 324px;
 }
-.img2{
+
+.img2 {
     margin-top: -630px;
     height: 602px;
 }
-.img3{
+
+.img3 {
     margin-top: -310px;
     height: 705px;
 }
-.table1{
+
+.table1 {
     height: 204px;
     width: 520px;
     text-align: center;
     padding: 1px;
     margin-top: 70px;
 }
-.table2{
+
+.table2 {
     height: 190px;
     width: 497px;
     text-align: center;
     padding: 1px;
 }
-.table3{
+
+.table3 {
     height: 222px;
     width: 498px;
     text-align: center;
     padding: 1px;
 }
-.two-table{
+
+.two-table {
     margin-top: 170px;
     padding-left: 20px;
 }
-.table4{
+
+.table4 {
     margin-top: 120px;
     height: 148px;
     width: 511px;
     text-align: left;
 }
-.table1 thead tr td,.table1 tbody tr td,
-.table2 thead tr td,.table2 tbody tr td,
-.table3 thead tr td,.table3 tbody tr td,
-.table4 thead tr td,.table4 tbody tr td{
+
+.table1 thead tr td, .table1 tbody tr td,
+.table2 thead tr td, .table2 tbody tr td,
+.table3 thead tr td, .table3 tbody tr td,
+.table4 thead tr td, .table4 tbody tr td {
     border: 1px solid black;
 }
+
 table {
     margin: 40px 0;
 }
-.body{
+
+.body {
     display: flex;
     flex-flow: column;
     margin: 20px 200px 20px 120px;
 }
-table td{
+
+table td {
     text-align: center;
     font-size: large;
 }
-table tr td:nth-child(2){
+
+table tr td:nth-child(2) {
     width: 280px;
 }
+
 .table1 thead tr td:nth-child(2),
 .table1 thead tr td:nth-child(3),
-.table1 tbody tr td:nth-child(1)
-{
+.table1 tbody tr td:nth-child(1) {
     font-weight: 700;
     font-family: "Arial Black", sans-serif;
 }
-.table2 tbody tr:nth-child(1) td{
+
+.table2 tbody tr:nth-child(1) td {
     font-weight: 700;
     font-family: "Arial Black", sans-serif;
 }
+
 .table3 thead tr td:nth-child(2),
 .table3 thead tr td:nth-child(3),
-.table3 tbody tr td:nth-child(1){
+.table3 tbody tr td:nth-child(1) {
     font-weight: 700;
     font-family: "Arial Black", sans-serif;
 }
+
 .table4 tbody tr:nth-child(1) td:nth-child(2),
 .table4 tbody tr:nth-child(1) td:nth-child(3),
 .table4 tbody tr:nth-child(2) td:nth-child(1),
-.table4 tbody tr:nth-child(3) td:nth-child(1){
+.table4 tbody tr:nth-child(3) td:nth-child(1) {
     font-weight: 700;
     font-family: "Arial Black", sans-serif;
 }
-td:nth-child(3), .table2 td:nth-child(2){
+
+td:nth-child(3), .table2 td:nth-child(2) {
     font-weight: 700;
     font-family: "PT Sans", sans-serif;
 }

@@ -1,6 +1,7 @@
-.main{
+.main {
     font-family: "PT Sans", sans-serif;
 }
+
 .title {
     height: 32px;
     text-align: center;
@@ -10,28 +11,32 @@
     line-height: 32px;
     margin: 30px 0 20px 0;
 }
-.title-div{
+
+.title-div {
     margin-bottom: 5px;
 }
-.title-div p{
+
+.title-div p {
     text-align: justify;
     font-size: 18px;
 }
 
-.title-div span,.title-div .mail{
+.title-div span, .title-div .mail {
     font-weight: 700;
     font-size: large;
     font-style: italic;
 }
-.title-div .mail{
+
+.title-div .mail {
     font-weight: 700;
     font-size: large;
     font-style: italic;
     margin-top: 0;
 }
-.titleFAQ{
+
+.titleFAQ {
     text-decoration: underline;
     font-size: x-large;
     font-weight: normal;
-    margin:25px 0 20px 0;
+    margin: 25px 0 20px 0;
 }

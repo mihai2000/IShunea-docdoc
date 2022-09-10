@@ -78,6 +78,7 @@ section.program-medic .program-medic .phone-nr2 span {
         text-align: center;
     }
 }
+
 @media (max-width: 991px) and (min-width: 768px) {
     section.program-medic .container .program-medic span {
         text-align: right;

@@ -4,8 +4,9 @@ import ProgramareDoctor from "./ProgramareDoctor/ProgramareDoctor";
 import Contact from "./Contact/Contact";
 import ProgramareServicii from "./ProgramareServicii/ProgramareServicii";
 import DocInfo from "./DocInfo/DocInfo";
-export default function HomePage(){
-    return(
+
+export default function HomePage() {
+    return (
         <div>
             <SearchComponent/>
             <ProgramareDoctor/>

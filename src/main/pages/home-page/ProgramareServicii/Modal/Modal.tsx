@@ -1,7 +1,8 @@
 import React from "react";
-import  './Modal.css'
-export default function ModalBody(){
-    return(
+import './Modal.css'
+
+export default function ModalBody() {
+    return (
         <div id="POPUP1" className="Popup">
             <div className="Container">
                 <div className="Box">
@@ -9,9 +10,10 @@ export default function ModalBody(){
                         <div className="Clinics">
                             <ul className="List">
                                 <li className="Column">
-                                    <a href="http://www.docdoc.md/ro/service/ecografie" className="Level0">Ultrasonografie </a>
+                                    <a href="http://www.docdoc.md/ro/service/ecografie"
+                                       className="Level0">Ultrasonografie </a>
                                     <a href="http://www.docdoc.md/ro/service/neurosonografia-prin-fontanela"
-                                    className="Level1">neurosonografia prin fontanelă</a><a
+                                       className="Level1">neurosonografia prin fontanelă</a><a
                                     href="http://www.docdoc.md/ro/service/ecografie-glanda-tiroida" className="Level1">ecografie
                                     glanda tiroidă</a><a
                                     href="http://www.docdoc.md/ro/service/ecografie-glanda-tiroida-2d-doppler"
@@ -539,4 +541,4 @@ export default function ModalBody(){
             </div>
         </div>
     );
- }
+}

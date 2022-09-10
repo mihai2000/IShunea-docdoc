@@ -1,8 +1,8 @@
 import React from "react";
 import './Biblioteca.css';
 
-export  default function Biblioteca(){
-    return(
+export default function Biblioteca() {
+    return (
         <div className="Main">
             <section className="library">
                 <div className="container">
@@ -1001,34 +1001,35 @@ export  default function Biblioteca(){
                             <ul className="Directions">
                                 <li>
                                     <a href="http://www.docdoc.md/ro/clinics" className="Clinics">Centre de
-                                    diagnostic</a>
+                                        diagnostic</a>
                                     <u>
                                         Aveți nevoie de analize de laborator sau investigații medicale de
-                                    performanță? Docdoc te ajută să găsești un centru medical de încredre.
+                                        performanță? Docdoc te ajută să găsești un centru medical de încredre.
                                     </u>
                                 </li>
                                 <li>
                                     <a href="http://www.docdoc.md/ro" className="Doctors">Medici</a>
                                     <u>Sunteți în
-                                    căutarea unui medic calificat mai aproape de casa dvs? Docdoc.md îți oferă această
-                                    oportunitate.</u>
+                                        căutarea unui medic calificat mai aproape de casa dvs? Docdoc.md îți oferă
+                                        această
+                                        oportunitate.</u>
                                 </li>
                                 <li>
                                     <a href="http://www.docdoc.md/ro/diseases" className="Diseases">Ghid de boli</a>
                                     <u>Aici
-                                    puteți găsi un medic specializat pentru tratamentul bolii dumneavoastră.</u>
+                                        puteți găsi un medic specializat pentru tratamentul bolii dumneavoastră.</u>
                                 </li>
                                 <li>
                                     <a href="http://www.docdoc.md/ro/library" className="Library">Biblioteca
-                                    medicală</a>
+                                        medicală</a>
                                     <u>Am adunat pentru dvs o mulțime de articole utile despre doctori,
-                                    medicină, cât și cele mai noi metode de tratament și diagnostic.</u>
+                                        medicină, cât și cele mai noi metode de tratament și diagnostic.</u>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            </div>
+        </div>
     );
 }

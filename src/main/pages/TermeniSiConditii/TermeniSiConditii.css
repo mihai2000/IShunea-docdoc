@@ -1,7 +1,8 @@
-.main{
+.main {
     font-family: "PT Sans", sans-serif;
-    margin:0 200px;
+    margin: 0 200px;
 }
+
 .title {
     height: 32px;
     text-align: center;
@@ -11,35 +12,42 @@
     line-height: 32px;
     margin: 30px 0 20px 0;
 }
-h1+p
-{
+
+h1 + p {
     font-weight: 700;
 }
+
 ol {
     counter-reset: item;
     word-break: break-all;
     margin: 0;
     padding: 0;
 }
-.listTermeni{
+
+.listTermeni {
     margin-bottom: 100px;
 }
-ol li,p{
-    font-size:14px ;
+
+ol li, p {
+    font-size: 14px;
 }
-ol li:before{
+
+ol li:before {
     padding-right: 3em;
 }
-ol ol >li {
+
+ol ol > li {
     display: block;
     line-height: 20px;
 }
-ol ol>li:before {
+
+ol ol > li:before {
     content: counters(item, ".") ". ";
     counter-increment: item;
     font-weight: normal;
     padding-right: 2em;
- }
-span{
+}
+
+span {
     font-weight: 700;
 }

@@ -7,25 +7,23 @@ import Inputmask from 'inputmask';
 
 
 function Header() {
-      $(document).ready(function() {
-    Inputmask().mask(document.querySelectorAll("input"));
-          // $("#CallBack").focusin(function() {
-          //     $("label").toggleClass( "d-none" );
-          // });
-          // $("input").blur(function() {
-          //     $(this).toggleClass( "d-none" );
-          // });
-     });
+    $(document).ready(function () {
+        Inputmask().mask(document.querySelectorAll("input"));
+        // $("#CallBack").focusin(function() {
+        //     $("label").toggleClass( "d-none" );
+        // });
+        // $("input").blur(function() {
+        //     $(this).toggleClass( "d-none" );
+        // });
+    });
 
-    const phone = () =>
-    {
+    const phone = () => {
         // @ts-ignore
         document.getElementById("disapear").classList.add('d-none');
         // @ts-ignore
         document.getElementById("show").classList.remove('d-none');
     }
-    const text = () =>
-    {
+    const text = () => {
         // @ts-ignore
         document.getElementById("disapear").classList.remove('d-none');
         // @ts-ignore
@@ -38,11 +36,11 @@ function Header() {
             <div className="container">
                 <div className="row header">
                     <div className="icon">
-                                <a href="/">
-                                    <img src={logo} className="logo" alt="logo" />
-                                </a>
+                        <a href="/">
+                            <img src={logo} className="logo" alt="logo"/>
+                        </a>
                     </div>
-                    <div  className="contact-info-1 contact-info-2-2">
+                    <div className="contact-info-1 contact-info-2-2">
                         <div className="link-block">
                             <a href="http://www.docdoc.md/ro" className="active">ro</a>
                             <a href="http://www.docdoc.md/ru" className="">ru</a>
@@ -57,10 +55,11 @@ function Header() {
                         </a>
                         <div className="number-form">
                             <div className="CallBack" id="CallBack">
-                                <label onClick={phone} id="disapear" className="number-form__callback">sau noi te vom suna înapoi</label>
-                                <div className="Form mask d-none" id="show" >
-                                    <input  id="phoneNumber" type="text " data-masked=""
-                                            data-inputmask="'mask': '+373 (99) 999-999'"
+                                <label onClick={phone} id="disapear" className="number-form__callback">sau noi te vom
+                                    suna înapoi</label>
+                                <div className="Form mask d-none" id="show">
+                                    <input id="phoneNumber" type="text " data-masked=""
+                                           data-inputmask="'mask': '+373 (99) 999-999'"
                                            placeholder="+373 (__) ___-___" className="form-control"/>
                                     <button onClick={text}> OK</button>
                                 </div>

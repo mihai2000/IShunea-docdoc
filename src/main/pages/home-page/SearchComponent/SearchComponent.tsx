@@ -3,30 +3,29 @@ import backgroundimg from '../../../../assets/docdoc-fundal.jpg';
 import iconfiind from '../../../../assets/iconfiind.png';
 import iconvisits from '../../../../assets/iconvisits.png';
 import iconprograms from '../../../../assets/iconprograms.png';
-import  icondocregister from '../../../../assets/icondocregister.png';
-import  iconcoment from '../../../../assets/iconcoment.png';
+import icondocregister from '../../../../assets/icondocregister.png';
+import iconcoment from '../../../../assets/iconcoment.png';
 import $ from 'jquery';
 import './SearchComponent.css';
 
-export default function SearchComponent(){
+export default function SearchComponent() {
     function selectSearchType() {
         // @ts-ignore
         let x = document.getElementById("Type").value;
         switch (x) {
-            case 'doctor':
-            {
+            case 'doctor': {
                 $('#Special').toggleClass('Active');
                 $('#SpecialService').toggleClass('Active');
                 break;
             }
-            case 'service':
-            {
+            case 'service': {
                 $('#Special').toggleClass('Active');
                 $('#SpecialService').toggleClass('Active');
                 break;
             }
         }
     }
+
     // function searchButton() {
     //     // @ts-ignore
     //     let x = document.getElementById("Type").value;
@@ -49,7 +48,7 @@ export default function SearchComponent(){
     //     }
     // }
     return (
-        <section className="search" style={{ backgroundImage: `url(${backgroundimg})` }}>
+        <section className="search" style={{backgroundImage: `url(${backgroundimg})`}}>
             <div className="container">
                 <div className="row search">
                     <h1>Serviciul gratuit de programare la doctor</h1>
@@ -57,11 +56,11 @@ export default function SearchComponent(){
                         <h2>Caută un<span> doctor bun iar</span> noi te vom programa la el</h2>
                     </div>
                     <div className="group-1">
-                        <select id="Type"  onChange={selectSearchType}>
+                        <select id="Type" onChange={selectSearchType}>
                             <option value='doctor' className="Level">Doctor</option>
                             <option value='service' className="Level">Servicii</option>
                         </select>
-                        <select id="Special"  data-action="http://www.docdoc.md/ro/doctors/">
+                        <select id="Special" data-action="http://www.docdoc.md/ro/doctors/">
                             <option value="acupunctura" className="Level">Acupunctor</option>
                             <option value="alergologie" className="Level">Alergolog</option>
                             <option value="andrologie" className="Level">Androlog</option>
@@ -83,7 +82,8 @@ export default function SearchComponent(){
                             <option value="hematologie" className="Level">Hematolog</option>
                             <option value="hepatologie" className="Level">Hepatolog</option>
                             <option value="imagist" className="Level">Imagist</option>
-                            <option value="boli-infectioase-tropicale-si-parazitologie" className="Level">Infecționist</option>
+                            <option value="boli-infectioase-tropicale-si-parazitologie" className="Level">Infecționist
+                            </option>
                             <option value="medicina-interna" className="Level">Internist</option>
                             <option value="kinetoterapie" className="Level">Kinetoterapeut</option>
                             <option value="mamologie" className="Level">Mamolog</option>
@@ -117,7 +117,8 @@ export default function SearchComponent(){
                         </select>
                         <select id="SpecialService" className="Active" data-action="http://www.docdoc.md/ro/service/">
                             <option value="ecografie" className="Level0">Ultrasonografie</option>
-                            <option value="neurosonografia-prin-fontanela" className="Level1">neurosonografia prin fontanelă
+                            <option value="neurosonografia-prin-fontanela" className="Level1">neurosonografia prin
+                                fontanelă
                             </option>
                             <option value="tesuturile-moi" className="Level1">ecografie țesuturile moi</option>
                             <option value="ecografie-glanda-tiroida" className="Level1">ecografie glanda tiroidă
@@ -828,19 +829,19 @@ export default function SearchComponent(){
                         </select>
                         <button className="search__button" /*onClick={searchButton}*/>
                             <img src={iconfiind}/>
-                                <i>CAUTĂ</i>
+                            <i>CAUTĂ</i>
                         </button>
                     </div>
                     <div className="group-2">
                         <div className="statistic1">
-                        <img src={iconvisits} alt="Vizitatori"/>
+                            <img src={iconvisits} alt="Vizitatori"/>
                             <div className="statistic__content">
                                 <h1>4113836</h1>
                                 <h2>vizitatori</h2>
                             </div>
                         </div>
                         <div className="statistic2">
-                        <img src={iconprograms} alt="Programari"/>
+                            <img src={iconprograms} alt="Programari"/>
                             <div className="statistic__content">
                                 <h1>74712</h1>
                                 <h2>programări</h2>
@@ -854,7 +855,7 @@ export default function SearchComponent(){
                             </div>
                         </div>
                         <div className="statistic4">
-                        <img src={iconcoment} alt="Comentarii"/>
+                            <img src={iconcoment} alt="Comentarii"/>
                             <div className="statistic__content">
                                 <h1>20418</h1>
                                 <h2>comentarii</h2>

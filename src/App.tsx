@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from "./main/components/Header";
 //home page
 import HomePage from "./main/pages/home-page/HomePage";
-import Navbar from "./main/pages/home-page/NavbarComponent/Navbar";
+import NavbarComponent from "./main/pages/home-page/NavbarComponent/Navbar";
 //footer
 import Footer from "./main/components/Footer";
 import AboutPage from "./main/pages/About-page/AboutPage";
@@ -19,28 +19,30 @@ import Biblioteca from "./main/pages/Biblioteca/Biblioteca";
 import Inregistrare from "./main/pages/Inregistrare/Inregistrare";
 import ContulMeu from "./main/pages/ContulMeu/ContulMeu";
 import Recovery from "./main/pages/ContulMeu/Recovery";
-import Institutions from "./main/pages/Institutions/Institutions";
+// import Institutions from "./main/pages/Institutions/Institutions";
 // Institutions
 import CentreMedicale from "./main/pages/Institutions/CentreMedicale/CentreMedicale";
 import CentreDiagnostic from "./main/pages/Institutions/CentreDiagnostic/CentreDiagnostic";
-import Laborator from "./main/pages/Institutions/Laborator/Laborator";
-import PropsLabs from "./main/pages/Institutions/Laborator/PropsLabs";
+// import PropsLabs from "./main/pages/Institutions/Laborator/PropsLabs";
+// import Laborator from "./main/pages/Institutions/Laborator/Laborator";
 import Stomatologii from "./main/pages/Institutions/Stomatologii/Stomatologii";
 import MedicinaEstetica from "./main/pages/Institutions/MedicinaEstetica/MedicinaEstetica";
 //Doctors
 import Doctors from "./main/pages/Doctors/Doctors";
-import {Routes, Route, Router} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
+import Laborator from "./main/pages/Institutions/Laborator/Laborator";
+
 function App() {
-    
-  return (
+
+    return (
         <div>
             <Header></Header>
-            <Navbar></Navbar>
+            <NavbarComponent/>
             {/*<Router location={history.location} navigator={history}>*/}
-                <Routes>
+            <Routes>
                 {/*Routes*/}
-                <Route path="/" element={ <HomePage/> }/>
-                <Route path="Despre" element={ <AboutPage/> }/>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="Despre" element={<AboutPage/>}/>
                 <Route path="TermeniSiCoditii" element={<TermeniSiConditii/>}/>
                 <Route path="FAQ" element={<FAQ/>}/>
                 <Route path="Rating" element={<Rating/>}/>
@@ -51,19 +53,17 @@ function App() {
                 <Route path="ContulMeu" element={<ContulMeu/>}/>
                 <Route path="Inregistrare" element={<Inregistrare/>}/>
                 <Route path="Recovery" element={<Recovery/>}/>
-                <Route path="Institutii" element={<Institutions/>}>
-                    <Route path=":Center" element={<CentreMedicale/>}/>
-                    <Route path=":Diagnostic" element={<CentreDiagnostic/>}/>
-                    <Route path=":Laborator" element={<PropsLabs/>}/>
-                    <Route path=":Stomatologie" element={<Stomatologii/>}/>
-                    <Route path=":Cosmetologie" element={<MedicinaEstetica/>}/>
-]                </Route>
-                    <Route path="Doctors" element={<Doctors/>}/>
+                <Route path="Institutii/Center" element={<CentreMedicale/>}/>
+                <Route path="Institutii/Diagnostic" element={<CentreDiagnostic/>}/>
+                <Route path="Institutii/Laborator" element={<Laborator/>}/>
+                <Route path="Institutii/Stomatologie" element={<Stomatologii/>}/>
+                <Route path="Institutii/Cosmetologie" element={<MedicinaEstetica/>}/>
+                <Route path="Doctors" element={<Doctors/>}/>
             </Routes>
             {/*</Router>*/}
             <Footer></Footer>
         </div>
-  );
+    );
 }
 
 export default App;

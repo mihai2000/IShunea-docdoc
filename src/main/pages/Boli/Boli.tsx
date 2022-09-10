@@ -1,8 +1,8 @@
 import React from "react";
-import  './Boli.css';
+import './Boli.css';
 
-export default function Boli(){
-    return(
+export default function Boli() {
+    return (
         <div className="Main">
             <section className="diseases">
                 <div className="container">
