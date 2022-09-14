@@ -31,12 +31,15 @@ import MedicinaEstetica from "./main/pages/Institutions/MedicinaEstetica/Medicin
 import Doctors from "./main/pages/Doctors/Doctors";
 import {Route, Routes} from "react-router-dom";
 import Laborator from "./main/pages/Institutions/Laborator/Laborator";
-
+import './i18next/i18n';
+import {PopupChatReact} from "./main/components/PopupChat/PopupChatReact";
+import PopupApp from "./main/components/PopupChat/PopupChatReact";
 function App() {
-
-    return (
+    return    (
         <div>
-            <Header></Header>
+            <PopupChatReact/>
+            {/*<PopupApp/>*/}
+            <Header/>
             <NavbarComponent/>
             {/*<Router location={history.location} navigator={history}>*/}
             <Routes>
@@ -61,7 +64,7 @@ function App() {
                 <Route path="Doctors" element={<Doctors/>}/>
             </Routes>
             {/*</Router>*/}
-            <Footer></Footer>
+            <Footer/>
         </div>
     );
 }

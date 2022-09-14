@@ -1,0 +1,13 @@
+{
+  "Header": {
+    "Programare": "Programează-te la doctor",
+    "Apel": "sau noi te vom suna înapoi"
+  },
+  "Navbar": {
+    "CentreMed": "Spitale și Centre medicale",
+    "Diagnostic": "Centre de diagnostic",
+    "Laboratoare": "Laboratoare",
+    "Stomatologii": "Stomatologii",
+    "Cosmetologie": "Medicină estetică"
+  }
+}

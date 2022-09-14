@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import './Inregistrare.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChartLine, faCheckSquare, faThumbsUp} from "@fortawesome/free-solid-svg-icons";
 import $ from "jquery";
 import Inputmask from "inputmask";
+import Axios from 'axios';
 
 export default function Inregistrare() {
+    const [usernameReg, setUsernameReg] = useState('');
+    const [passwordReg, setPasswordReg] = useState('');
+    const register = () =>{
+        Axios.post('http://localhost:3001/Inregistrare', {
+            username:usernameReg, password:passwordReg,
+        }).then((response)=>{
+            console.log(response);
+        });
+    };
     $(document).ready(function () {
         Inputmask().mask(document.querySelectorAll("input"));
     });
@@ -21,6 +31,7 @@ export default function Inregistrare() {
         // @ts-ignore
         document.getElementById("Title").classList.remove('Active');
     }
+
     return (
         <div className="Main">
             <div className="Block Account SignUp">
@@ -29,7 +40,6 @@ export default function Inregistrare() {
                         <div className="col-md-6">
                             <div className="Arguments">
                                 <h2>Primiți pacienți noi de la serviciul docdoc.md</h2>
-
                                 <p>&Icirc;nregistrați-vă pe site-ul nostru și &icirc;ncepeți să primiți un flux mai mare
                                     de pacienți, veniți de la unicul serviciu național de programare la doctor.</p>
                                 <h3>Ce vă propunem?</h3>
@@ -69,8 +79,7 @@ export default function Inregistrare() {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <form method="POST" action="http://www.docdoc.md/ro/account?Action=SignUp"
-                                  className="Ajaxed">
+                            <form>
                                 <h1>Înregistrare</h1>
                                 <div className="radio">
                                     <div>
@@ -82,43 +91,60 @@ export default function Inregistrare() {
                                         <label htmlFor="TypeClinic"> Eu reprezint interesele clinicii</label>
                                     </div>
                                 </div>
-                                <div id="Name" className="">
-                                    <div className="Field">
-                                        <input type="text" name="FirstName" id="FirstName" value=""
-                                               placeholder="Prenume"/>
-                                    </div>
-                                    <div className="Field">
-                                        <input type="text" name="LastName" id="LastName" value=""
-                                               placeholder="Nume"/>
-                                    </div>
-                                </div>
-                                <div id="Title" className="Field Active">
-                                    <input type="text" name="Title" value=""
-                                           placeholder="Denumirea clinicii"/>
-                                </div>
                                 <div className="Field">
-                                    <input required name="phone" id="phone" type="text"
-                                           data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"
-                                           placeholder="Telefon"/>
-                                </div>
-                                <div className="Field">
-                                    <input type="text" name="Email" id="Email" value=""
-                                           placeholder="E-mail"/>
-                                </div>
-                                <div className="checkTermeni">
-                                    <p><input
-                                        type="checkbox"
-                                        className="Locked"
-                                        defaultChecked={true}
-                                        disabled={true}
+                                    <input type="text"  placeholder="Username..."
+                                           onChange={(e)=> {
+                                               setUsernameReg(e.target.value);
+                                           }}
                                     />
-                                        Am citit și sunt de acord cu
-                                        <a href="/TermeniSiConditii">Termeni şi
-                                            сondiţii</a></p>
-                                    <button type="submit" className="Button basic-info-button"
-                                            id="LoginSubmit">Înregistrează
-                                    </button>
                                 </div>
+                                <div className="Field">
+                                    <input type="password" placeholder="Password..."
+                                           onChange={(e)=> {
+                                               setPasswordReg(e.target.value);
+                                           }}
+                                    />
+                                </div>
+                                {/*<div id="Name">*/}
+                                {/*    <div className="Field">*/}
+                                {/*        <input type="text" name="FirstName" id="FirstName" value=""*/}
+                                {/*               placeholder="Prenume"/>*/}
+                                {/*    </div>*/}
+                                {/*    <div className="Field">*/}
+                                {/*        <input type="text" name="LastName" id="LastName" value=""*/}
+                                {/*               placeholder="Nume"/>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
+                                {/*<div id="Title" className="Field Active">*/}
+                                {/*    <input type="text" name="Title" value=""*/}
+                                {/*           placeholder="Denumirea clinicii"/>*/}
+                                {/*</div>*/}
+                                {/*<div className="Field">*/}
+                                {/*    <input required name="phone" id="phone" type="text"*/}
+                                {/*           data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"*/}
+                                {/*           placeholder="Telefon"/>*/}
+                                {/*</div>*/}
+                                {/*<div className="Field">*/}
+                                {/*    <input type="text" name="Email" id="Email" value=""*/}
+                                {/*           placeholder="E-mail"/>*/}
+                                {/*</div>*/}
+                                {/*<div className="checkTermeni">*/}
+                                {/*    <p><input*/}
+                                {/*        type="checkbox"*/}
+                                {/*        className="Locked"*/}
+                                {/*        defaultChecked={true}*/}
+                                {/*        disabled={true}*/}
+                                {/*    />*/}
+                                {/*        Am citit și sunt de acord cu*/}
+                                {/*        <a href="/TermeniSiConditii">Termeni şi*/}
+                                {/*            сondiţii</a></p>*/}
+                                {/*</div>*/}
+                                    <button type="submit" className="Button basic-info-button"
+                                            onClick={register}
+                                            id="LoginSubmit">
+                                            Înregistrează
+                                    </button>
+
                                 <div className="b">
                                     <a href="/ContulMeu">Intră în cabinetul
                                         personal</a>

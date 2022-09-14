@@ -143,12 +143,12 @@ section .program-service3 div {
     text-align: center;
 }
 
-section .program-service3 div a h1,
-section .program-service3 div a img {
+section .program-service3 div Button h1,
+section .program-service3 div Button img {
     display: inline-block;
 }
 
-section .program-service3 div a h1 {
+section .program-service3 div Button h1 {
     color: #1d1d1d;
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
@@ -159,12 +159,12 @@ section .program-service3 div a h1 {
     padding: 0;
 }
 
-section .program-service3 div a img {
+section .program-service3 div Button img {
     margin-left: 13px;
     position: relative;
 }
 
-section .program-service3 div a:focus {
+section .program-service3 div Button:focus {
     outline: 0;
 }
 

@@ -4,9 +4,12 @@ import iconphoneheader from "../../assets/iconphoneheader.png";
 import './header.css';
 import $ from 'jquery';
 import Inputmask from 'inputmask';
+import '../../i18next/i18n';
+import i18n from "i18next";
+import { withNamespaces } from 'react-i18next';
 
-
-function Header() {
+// @ts-ignore
+function Header({t}) {
     $(document).ready(function () {
         Inputmask().mask(document.querySelectorAll("input"));
         // $("#CallBack").focusin(function() {
@@ -16,7 +19,18 @@ function Header() {
         //     $(this).toggleClass( "d-none" );
         // });
     });
-
+    // @ts-ignore
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    }
+    $(function() {
+        $("#lang a").click(function() {
+            // remove classes from all
+            $("#lang a").removeClass("active");
+            // add class to the one we clicked
+            $(this).addClass("active");
+        });
+    });
     const phone = () => {
         // @ts-ignore
         document.getElementById("disapear").classList.add('d-none');
@@ -40,13 +54,12 @@ function Header() {
                             <img src={logo} className="logo" alt="logo"/>
                         </a>
                     </div>
-                    <div className="contact-info-1 contact-info-2-2">
-                        <div className="link-block">
-                            <a href="http://www.docdoc.md/ro" className="active">ro</a>
-                            <a href="http://www.docdoc.md/ru" className="">ru</a>
+                    <div className="contact-info-1">
+                        <div className="link-block" id="lang">
+                            <a className="active" onClick={() => changeLanguage('ro')}>ro</a>
+                            <a className="" onClick={() => changeLanguage('ru')}>ru</a>
                         </div>
-
-                        <h1 className="cititle">Programează-te la doctor</h1>
+                        <h1 className="cititle">{t('Header.Programare')}</h1>
                         <a href="tel:022600903">
                             <div className="call-now">
                                 <img src={iconphoneheader} alt="iconphoneheader"/>
@@ -55,8 +68,9 @@ function Header() {
                         </a>
                         <div className="number-form">
                             <div className="CallBack" id="CallBack">
-                                <label onClick={phone} id="disapear" className="number-form__callback">sau noi te vom
-                                    suna înapoi</label>
+                                <label onClick={phone} id="disapear" className="number-form__callback">
+                                    {t('Header.Apel')}
+                                </label>
                                 <div className="Form mask d-none" id="show">
                                     <input id="phoneNumber" type="text " data-masked=""
                                            data-inputmask="'mask': '+373 (99) 999-999'"
@@ -73,5 +87,6 @@ function Header() {
     );
 }
 
-export default Header;
+// @ts-ignore
+export default withNamespaces()(Header);
 

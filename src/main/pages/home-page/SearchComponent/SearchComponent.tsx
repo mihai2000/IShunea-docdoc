@@ -828,7 +828,7 @@ export default function SearchComponent() {
                             <option value="8">Telecentru</option>
                         </select>
                         <button className="search__button" /*onClick={searchButton}*/>
-                            <img src={iconfiind}/>
+                            <img src={iconfiind} alt={iconfiind}/>
                             <i>CAUTĂ</i>
                         </button>
                     </div>

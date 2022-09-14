@@ -227,7 +227,6 @@ export default function ProgramareServicii() {
             <div className="container">
                 <div className="program-service3">
                     <div>
-                        <a href="#">
                             {
                                 values.map((v) => (
                                     <Button variant="link" className="btn me-2 mb-2" onClick={() => handleShow(v)}>
@@ -248,7 +247,6 @@ export default function ProgramareServicii() {
                                     <ModalBody/>
                                 </Modal.Body>
                             </Modal>
-                        </a>
                     </div>
                 </div>
             </div>

@@ -3,20 +3,30 @@
     height: 45px;
     border-bottom: thin solid #ffffff;
 }
+.bg-navColor{
+    background-color: #00b19f;
 
+}
 .buton-group {
     font-size: 18px;
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
     margin: auto;
 }
-
 .link {
     border-right: thin solid #fff;
     padding: 0;
     color: white;
 }
-
 .link:hover {
     color: white;
+}
+@media (max-width: 991px){
+    .link{
+        margin: 5px;
+        border: none;
+    }
+    .navbarBody {
+        height: 100%;
+    }
 }
