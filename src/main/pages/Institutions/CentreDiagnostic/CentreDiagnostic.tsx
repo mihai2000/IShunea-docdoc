@@ -39,8 +39,6 @@ export default function CentreDiagnostic() {
                                                         </div>
                                                     </div>
                                                 </div>
-
-
                                                 <div className="col-sm-6">
                                                     <div className="Info">
                                                         <a href="http://www.docdoc.md/ro/clinics/excellence">

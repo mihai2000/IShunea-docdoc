@@ -55,7 +55,7 @@ section.footer .link-block-footer h1 {
 section.footer .link-block-footer ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 100px 5px;
+    margin: 0 0 15px 5px;
 }
 
 section.footer .link-block ul li {
@@ -93,54 +93,47 @@ section.footer .link-block-footer ul.social-media-block li a {
 
 @media (max-width: 991px) and (min-width: 768px) {
     section.footer .container .footer {
-        /*margin-top: 50px;*/
+        margin-top: 50px;
     }
-
     section.footer .container .footer .link-block-footer {
         min-height: 50px;
     }
-
     section.footer .container .footer .link-block-footer ul {
         margin-bottom: 50px;
     }
-
-    section.footer .container .footer .link-block-footer ul li {
-        margin-top: 0;
-    }
-
     section.footer .container .footer .icon-block-footer img.logofooter {
         position: relative;
+        margin: auto;
+        left: 35%;
         width: 216px;
     }
-
     section.footer .container .footer .icon-block-footer h1 {
         text-align: center;
+        width: 100%;
         margin-bottom: 25px;
     }
 }
-
 @media (max-width: 767px) {
-    section.footer .footer {
+
+    section.footer .container .footer {
         margin-top: 50px;
-    }
-
-    section.footer .footer .link-block-footer {
         text-align: center;
     }
-
-    section.footer .footer .link-block-footer ul {
-        margin-bottom: 0;
+    section.footer .container .footer .link-block-footer {
+        min-height: 50px;
     }
-
-    section.footer .footer .icon-block-footer .logofooter {
-        text-align: center;
-        margin: 0 150px;
+    section.footer .container .footer .link-block-footer ul {
+        margin-bottom: 50px;
+    }
+    section.footer .container .footer .icon-block-footer img.logofooter {
+        position: relative;
+        margin: auto;
         width: 216px;
-    }
 
-    section.footer .footer .icon-block-footer h1 {
+    }
+    section.footer .container .footer .icon-block-footer h1 {
         text-align: center;
-        width: 130%;
-        margin: 25px -80px;
+        width: 100%;
+        margin-bottom: 25px;
     }
 }

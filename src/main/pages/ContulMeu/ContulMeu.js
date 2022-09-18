@@ -24,8 +24,7 @@ export default function ContulMeu() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <form
-                                  className="Login">
+                            <form  className="Login">
                                 <h1>Intră în cabinetul personal</h1>
                                 <div className="Field">
                                     <input type="text" id="Email" name="username" placeholder="Username..."

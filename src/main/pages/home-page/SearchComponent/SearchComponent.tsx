@@ -7,8 +7,10 @@ import icondocregister from '../../../../assets/icondocregister.png';
 import iconcoment from '../../../../assets/iconcoment.png';
 import $ from 'jquery';
 import './SearchComponent.css';
-
-export default function SearchComponent() {
+import {withNamespaces} from "react-i18next";
+import '../../../../i18next/i18n';
+//@ts-ignore
+function SearchComponent({t}) {
     function selectSearchType() {
         // @ts-ignore
         let x = document.getElementById("Type").value;
@@ -51,17 +53,17 @@ export default function SearchComponent() {
         <section className="search" style={{backgroundImage: `url(${backgroundimg})`}}>
             <div className="container">
                 <div className="row search">
-                    <h1>Serviciul gratuit de programare la doctor</h1>
+                    <h1>{t('SearchBar.SearchTitle')}</h1>
                     <div className="search__sub-title-span">
-                        <h2>Caută un<span> doctor bun iar</span> noi te vom programa la el</h2>
+                        <h2 dangerouslySetInnerHTML={{__html:t('SearchBar.SearchSubTitle')}}></h2>
                     </div>
                     <div className="group-1">
                         <select id="Type" onChange={selectSearchType}>
-                            <option value='doctor' className="Level">Doctor</option>
-                            <option value='service' className="Level">Servicii</option>
+                            <option value='doctor' className="Level">{t('SearchBar.SearchDropBox.Doctor')}</option>
+                            <option value='service' className="Level">{t('SearchBar.SearchDropBox.Servicii')}</option>
                         </select>
-                        <select id="Special" data-action="http://www.docdoc.md/ro/doctors/">
-                            <option value="acupunctura" className="Level">Acupunctor</option>
+                        <select id="Special">
+                            <option value="acupunctura" className="Level">{t('SearchBar.SearchDropBox.DoctorList')}</option>
                             <option value="alergologie" className="Level">Alergolog</option>
                             <option value="andrologie" className="Level">Androlog</option>
                             <option value="cardiologie" className="Level">Cardiolog</option>
@@ -115,8 +117,8 @@ export default function SearchComponent() {
                             <option value="venerologie" className="Level">Venerolog</option>
                             <option value="vertebrologie" className="Level">Vertebrolog</option>
                         </select>
-                        <select id="SpecialService" className="Active" data-action="http://www.docdoc.md/ro/service/">
-                            <option value="ecografie" className="Level0">Ultrasonografie</option>
+                        <select id="SpecialService" className="Active">
+                            <option value="ecografie" className="Level0">{t('SearchBar.SearchDropBox.ServiciiList')}</option>
                             <option value="neurosonografia-prin-fontanela" className="Level1">neurosonografia prin
                                 fontanelă
                             </option>
@@ -818,7 +820,7 @@ export default function SearchComponent() {
                             </option>
                         </select>
                         <select id="Location">
-                            <option value="1,2,3,4,5,6,7,8">tot Chișinău</option>
+                            <option value="1,2,3,4,5,6,7,8">{t('SearchBar.SearchDropBox.Sectoare')}</option>
                             <option value="2">Botanica</option>
                             <option value="3">Buiucani</option>
                             <option value="4">Centru</option>
@@ -829,7 +831,7 @@ export default function SearchComponent() {
                         </select>
                         <button className="search__button" /*onClick={searchButton}*/>
                             <img src={iconfiind} alt={iconfiind}/>
-                            <i>CAUTĂ</i>
+                            <i>{t('SearchBar.SearchDropBox.Cauta')}</i>
                         </button>
                     </div>
                     <div className="group-2">
@@ -837,28 +839,28 @@ export default function SearchComponent() {
                             <img src={iconvisits} alt="Vizitatori"/>
                             <div className="statistic__content">
                                 <h1>4113836</h1>
-                                <h2>vizitatori</h2>
+                                <h2>{t('SearchBar.SearchStatistics.Vizitatori')}</h2>
                             </div>
                         </div>
                         <div className="statistic2">
                             <img src={iconprograms} alt="Programari"/>
                             <div className="statistic__content">
                                 <h1>74712</h1>
-                                <h2>programări</h2>
+                                <h2>{t('SearchBar.SearchStatistics.Programari')}</h2>
                             </div>
                         </div>
                         <div className="statistic3">
                             <img src={icondocregister} alt="Doctori pe sait"/>
                             <div className="statistic__content">
                                 <h1>163</h1>
-                                <h2>doctori</h2>
+                                <h2>{t('SearchBar.SearchStatistics.Doctori')}</h2>
                             </div>
                         </div>
                         <div className="statistic4">
                             <img src={iconcoment} alt="Comentarii"/>
                             <div className="statistic__content">
                                 <h1>20418</h1>
-                                <h2>comentarii</h2>
+                                <h2>{t('SearchBar.SearchStatistics.Comentarii')}</h2>
                             </div>
                         </div>
                     </div>
@@ -867,3 +869,5 @@ export default function SearchComponent() {
         </section>
     );
 }
+// @ts-ignore
+export default withNamespaces()(SearchComponent)

@@ -1,5 +1,6 @@
 .Main {
     font-family: "PT Sans", sans-serif;
+    display: inline-block;
 }
 
 .title {
@@ -130,4 +131,27 @@ td:nth-child(3), .table2 td:nth-child(2) {
     font-family: "PT Sans", sans-serif;
 }
 
+@media (max-width: 991px) and (max-width: 768px){
+    .img1, .img2,.img3{
+        margin-top: auto;
+    }
+}
+.table1,.table2,.table3,.table4{
+    margin-left: -180px;
+}
+.first-b, .second-b, .third-b{
+    margin-left: 50px;
+}
 
+@media (max-width: 767px){
+    .img1, .img2,.img3{
+        margin-top: auto;
+        margin-right: 100px;
+    }
+    .table1,.table2,.table3,.table4{
+        margin-left: -180px;
+    }
+    .first-b, .second-b, .third-b{
+        margin-left: 50px;
+    }
+}

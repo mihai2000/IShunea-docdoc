@@ -121,3 +121,8 @@ input[type='password'] {
     justify-content: space-between;
     margin: 15px 0;
 }
+@media (max-width: 767px) {
+    .Account.Login form{
+        display: block;
+    }
+}

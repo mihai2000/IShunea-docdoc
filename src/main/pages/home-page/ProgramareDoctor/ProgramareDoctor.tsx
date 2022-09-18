@@ -3,8 +3,10 @@ import './ProgramareDoctor.css';
 import iconline from '../../../../assets/iconline.png';
 import icontriangle from '../../../../assets/icontriangle.png';
 import iconarrowright2 from '../../../../assets/iconarrowright2.png';
-
-export default function ProgramareDoctor() {
+import '../../../../i18next/i18n';
+import { withNamespaces } from 'react-i18next';
+//@ts-ignore
+function ProgramareDoctor({t}) {
     const show = () => {
         const active = document.querySelectorAll('.d-none');
         active.forEach(active => {
@@ -20,7 +22,7 @@ export default function ProgramareDoctor() {
         <section>
             <div className="program-medic1 container">
                 <div className="row container">
-                    <h1>Programare la doctor</h1>
+                    <h1>{t('ProgramareDoctor.ProgramareText')}</h1>
                     <div className="figure">
                         <img className="line1" src={iconline} alt="line"/>
                         <img className="triangle" src={icontriangle} alt="triangle"/>
@@ -31,42 +33,42 @@ export default function ProgramareDoctor() {
             <div className="program-medic2" id="doctors-list">
                 <div className="container">
                     <div id="" className="row program-medic2">
-                        <div className="col-lg-3 col-sm-6 col-xs-12">
+                        <div className="col-lg-3 col-md-6 col-sm-12">
                             <ul>
                                 <li className="">
                                     <a href="/Doctors">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Acupunctor</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.1')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/alergologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Alergolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.2')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/andrologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Androlog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.3')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/cardiologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Cardiolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.4')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/chirurgie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Chirurg</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.5')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/chirurgie-estetica">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Chirurg estetician</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.6')}</h1>
                                     </a>
                                 </li>
                                 <li className=" d-none ">
@@ -111,50 +113,50 @@ export default function ProgramareDoctor() {
                                         <h1>Endoscopist</h1>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 col-xs-12">
-                            <ul>
-                                <li className="">
-                                    <a href="http://www.docdoc.md/ro/doctors/medicina-alternativa">
+                                <li className=" d-none ">
+                                    <a href="http://www.docdoc.md/ro/doctors/endoscopie">
                                         <div className="program-medic2__icon"></div>
                                         <h1>Fitoterapeut</h1>
                                     </a>
                                 </li>
-                                <li className="">
+                            </ul>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <ul>
+                               <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/fizioterapie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Fizioterapeut</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.7')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/flebologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Flebolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.8')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/gastroenterologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Gastroenterolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.9')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/ginecologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Ginecolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.10')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/hematologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Hematolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.11')}</h1>
                                     </a>
                                 </li>
-                                <li className=" d-none ">
+                                <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/hepatologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Hepatolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.12')}</h1>
                                     </a>
                                 </li>
                                 <li className=" d-none ">
@@ -193,50 +195,56 @@ export default function ProgramareDoctor() {
                                         <h1>Medic de familie</h1>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 col-xs-12">
-                            <ul>
-                                <li className="">
+                                <li className="d-none">
                                     <a href="http://www.docdoc.md/ro/doctors/nefrologie">
                                         <div className="program-medic2__icon"></div>
                                         <h1>Nefrolog</h1>
                                     </a>
                                 </li>
+                                <li className="d-none">
+                                    <a href="http://www.docdoc.md/ro/doctors/nefrologie">
+                                        <div className="program-medic2__icon"></div>
+                                        <h1>Neuro-psihiatru</h1>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <ul>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/neurochirurg">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Neurochirurg</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.13')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/neurologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Neurolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.14')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/obstetrica">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Obstetrician-ginecolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.15')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/oftalmologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Oftalmolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.16')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/oncologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Oncolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.17')}</h1>
                                     </a>
                                 </li>
-                                <li className=" d-none ">
+                                <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/ortopedie-si-traumatologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Ortoped-traumatolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.18')}</h1>
                                     </a>
                                 </li>
                                 <li className=" d-none ">
@@ -275,56 +283,56 @@ export default function ProgramareDoctor() {
                                         <h1>Psiholog</h1>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 col-sm-6 col-xs-12">
-                            <ul>
-                                <li className="">
+                                <li className="d-none">
                                     <a href="http://www.docdoc.md/ro/doctors/psihoterapie">
                                         <div className="program-medic2__icon"></div>
                                         <h1>Psihoterapeut</h1>
                                     </a>
                                 </li>
-                                <li className="">
+                                <li className="d-none">
                                     <a href="http://www.docdoc.md/ro/doctors/reabilitolog">
                                         <div className="program-medic2__icon"></div>
                                         <h1>Reabilitolog</h1>
                                     </a>
                                 </li>
+                            </ul>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <ul>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/reflexologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Reflexoterapeut</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.19')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/reproducere-umana">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Reproductolog (FIV)</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.20')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/reumatologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Reumatolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.21')}</h1>
                                     </a>
                                 </li>
                                 <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/sexologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Sexolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.22')}</h1>
                                     </a>
                                 </li>
-                                <li className=" d-none ">
+                                <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/masaj">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Specialist în masaj</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.23')}</h1>
                                     </a>
                                 </li>
-                                <li className=" d-none ">
+                                <li className="">
                                     <a href="http://www.docdoc.md/ro/doctors/stomatologie">
                                         <div className="program-medic2__icon"></div>
-                                        <h1>Stomatolog</h1>
+                                        <h1>{t('ProgramareDoctor.DoctorList.24')}</h1>
                                     </a>
                                 </li>
                                 <li className=" d-none ">
@@ -366,7 +374,7 @@ export default function ProgramareDoctor() {
             <div className="row program-medic3">
                 <div className="container">
                     <a onClick={show} href="#doctors-list" id="hide">
-                        <h1>Vezi toate specialitățile</h1>
+                        <h1>{t('ProgramareDoctor.AllDoctor')}</h1>
                         <img src={iconarrowright2} alt="iconarrowright2"/>
                     </a>
                 </div>
@@ -374,3 +382,5 @@ export default function ProgramareDoctor() {
         </section>
     );
 }
+// @ts-ignore
+export default withNamespaces()(ProgramareDoctor)

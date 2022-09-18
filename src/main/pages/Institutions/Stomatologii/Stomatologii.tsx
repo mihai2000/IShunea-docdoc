@@ -23,11 +23,13 @@ export default function Stomatologii() {
                                                         <a href="http://www.docdoc.md/ro/clinics/drgrossu"
                                                            className="Logo">
                                                             <img
+                                                                title="Grosu"
                                                                 src="http://www.docdoc.md/files/2015/10/22/55b0fe0da3dcf0291dc646a8a1ddea6d.160x135-fit/dr-grossu-clinica-stomatologica.png"
                                                                 alt="Dr.Grossu Clinică stomatologică"/>
                                                         </a>
                                                         <div className="Map">
                                                             <iframe
+                                                                title="Map"
                                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.69029782332!2d28.793084015535428!3d47.02668383585058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ddd77e68d55%3A0x42cd0b143e1cf1a2!2zUGlhyJthIFVuaXJpaSBQcmluY2lwYXRlbG9yIDMsIENoacWfaW7Eg3UgMjA2NCwg0JzQvtC70LTQvtCy0LA!5e0!3m2!1sru!2s!4v1445499594817"
                                                                 className="Map"></iframe>
                                                             <div className="PopupAjaxed"

@@ -10,7 +10,7 @@ export default function Inregistrare() {
     const [usernameReg, setUsernameReg] = useState('');
     const [passwordReg, setPasswordReg] = useState('');
     const register = () =>{
-        Axios.post('http://localhost:3001/Inregistrare', {
+        Axios.post('http://localhost:3000/Inregistrare', {
             username:usernameReg, password:passwordReg,
         }).then((response)=>{
             console.log(response);
@@ -37,7 +37,7 @@ export default function Inregistrare() {
             <div className="Block Account SignUp">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-lg-6 col-md-12">
                             <div className="Arguments">
                                 <h2>Primiți pacienți noi de la serviciul docdoc.md</h2>
                                 <p>&Icirc;nregistrați-vă pe site-ul nostru și &icirc;ncepeți să primiți un flux mai mare
@@ -78,15 +78,15 @@ export default function Inregistrare() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <form>
+                        <div className="col-lg-6 col-md-12">
+                            <form >
                                 <h1>Înregistrare</h1>
-                                <div className="radio">
-                                    <div>
+                                <div className="radio" id="radio">
+                                    <div className="active">
                                         <input onClick={proprii} type="radio" name="Type" value="1" id="TypeDoctor"/>
                                         <label htmlFor="TypeDoctor">Eu reprezint interesele proprii</label>
                                     </div>
-                                    <div>
+                                    <div className="">
                                         <input onClick={clinicii} type="radio" name="Type" value="2" id="TypeClinic"/>
                                         <label htmlFor="TypeClinic"> Eu reprezint interesele clinicii</label>
                                     </div>
@@ -105,40 +105,40 @@ export default function Inregistrare() {
                                            }}
                                     />
                                 </div>
-                                {/*<div id="Name">*/}
-                                {/*    <div className="Field">*/}
-                                {/*        <input type="text" name="FirstName" id="FirstName" value=""*/}
-                                {/*               placeholder="Prenume"/>*/}
-                                {/*    </div>*/}
-                                {/*    <div className="Field">*/}
-                                {/*        <input type="text" name="LastName" id="LastName" value=""*/}
-                                {/*               placeholder="Nume"/>*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
-                                {/*<div id="Title" className="Field Active">*/}
-                                {/*    <input type="text" name="Title" value=""*/}
-                                {/*           placeholder="Denumirea clinicii"/>*/}
-                                {/*</div>*/}
-                                {/*<div className="Field">*/}
-                                {/*    <input required name="phone" id="phone" type="text"*/}
-                                {/*           data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"*/}
-                                {/*           placeholder="Telefon"/>*/}
-                                {/*</div>*/}
-                                {/*<div className="Field">*/}
-                                {/*    <input type="text" name="Email" id="Email" value=""*/}
-                                {/*           placeholder="E-mail"/>*/}
-                                {/*</div>*/}
-                                {/*<div className="checkTermeni">*/}
-                                {/*    <p><input*/}
-                                {/*        type="checkbox"*/}
-                                {/*        className="Locked"*/}
-                                {/*        defaultChecked={true}*/}
-                                {/*        disabled={true}*/}
-                                {/*    />*/}
-                                {/*        Am citit și sunt de acord cu*/}
-                                {/*        <a href="/TermeniSiConditii">Termeni şi*/}
-                                {/*            сondiţii</a></p>*/}
-                                {/*</div>*/}
+                                <div id="Name">
+                                    <div className="Field">
+                                        <input type="text" name="FirstName" id="FirstName" value=""
+                                               placeholder="Prenume"/>
+                                    </div>
+                                    <div className="Field">
+                                        <input type="text" name="LastName" id="LastName"
+                                               placeholder="Nume"/>
+                                    </div>
+                                </div>
+                                <div id="Title" className="Field Active">
+                                    <input type="text" name="Title"
+                                           placeholder="Denumirea clinicii"/>
+                                </div>
+                                <div className="Field">
+                                    <input required name="phone" id="phone" type="text"
+                                           data-masked="" data-inputmask="'mask': '+373 (99) 999-999'"
+                                           placeholder="Telefon"/>
+                                </div>
+                                <div className="Field">
+                                    <input type="text" name="Email" id="Email"
+                                           placeholder="E-mail"/>
+                                </div>
+                                <div className="checkTermeni">
+                                    <p><input
+                                        type="checkbox"
+                                        className="Locked"
+                                        defaultChecked={true}
+                                        disabled={true}
+                                    />
+                                        Am citit și sunt de acord cu
+                                        <a href="/TermeniSiConditii">Termeni şi
+                                            сondiţii</a></p>
+                                </div>
                                     <button type="submit" className="Button basic-info-button"
                                             onClick={register}
                                             id="LoginSubmit">

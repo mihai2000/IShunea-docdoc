@@ -4,13 +4,13 @@ section.search {
     background-position: center;
 }
 
-section.search .search.small {
+section.search .search {
     min-height: 128px;
 }
 
-section.search .search.small .group-1 {
-    margin-top: 40px;
-    margin-bottom: 38px;
+section.search .search .group-1 {
+    width: auto;
+    margin: 40px 0;
 }
 
 section.search .search h1 {
@@ -245,122 +245,9 @@ section.search .search .group-2 .statistic4 h1 {
 section.search .search .group-2 .statistic4 h2 {
     margin: 10px 0 0 10px;
 }
-
-
-@media (max-width: 767px) {
-
-    section.search .search {
-        padding: 0 15px;
-    }
-
-    section.search .search h1 {
-        font-size: 32px;
-        line-height: 38px;
-        margin-top: 60px;
-    }
-
-    section.search .search .search__sub-title-span h2 {
-        font-size: 21px;
-    }
-
-    section.search .search .group-1 {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: 200px;
-        margin-top: 40px;
-        left: 0;
-    }
-
-    section.search .search .group-1 select {
-        margin-left: 0;
-    }
-
-    section.search .search .group-1 #Type {
-        width: 100%;
-        background-position: center right 20px;
-        border-right: none;
-        border-radius: 5px 5px 0 0;
-    }
-
-    section.search .search .group-1 #Special {
-        width: 100%;
-        background-position: center right 20px;
-        border-right: none;
-    }
-
-    section.search .search .group-1 #Location {
-        width: 100%;
-        background-position: center right 20px;
-    }
-
-    section.search .search .group-1 .search__button {
-        width: 100%;
-        border-radius: 0 0 5px 5px;
-    }
-
-    section.search .search .group-2 {
-        width: 180px;
-        margin-left: -90px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    section.search .search .group-2 .statistic1,
-    section.search .search .group-2 .statistic2,
-    section.search .search .group-2 .statistic3,
-    section.search .search .group-2 .statistic4 {
-        width: 180px;
-        height: 42px;
-    }
-
-    section.search .search .group-2 .statistic1 h1 {
-        margin: 0 0 0 14px;
-    }
-
-    section.search .search .group-2 .statistic1 h2 {
-        margin: 10px 0 0 14px;
-    }
-
-    section.search .search .group-2 .statistic2 {
-        margin-top: 25px;
-    }
-
-    section.search .search .group-2 .statistic2 h1 {
-        margin: 0 0 0 22px;
-    }
-
-    section.search .search .group-2 .statistic2 h2 {
-        margin: 10px 0 0 22px;
-    }
-
-    section.search .search .group-2 .statistic3 {
-        margin-top: 25px;
-    }
-
-    section.search .search .group-2 .statistic3 h1 {
-        margin: 0 0 0 26px;
-    }
-
-    section.search .search .group-2 .statistic3 h2 {
-        margin: 10px 0 0 26px;
-    }
-
-    section.search .search .group-2 .statistic4 {
-        margin-top: 25px;
-    }
-
-    section.search .search .group-2 .statistic4 h1 {
-        margin: 0 0 0 10px;
-    }
-
-    section.search .search .group-2 .statistic4 h2 {
-        margin: 10px 0 0 10px;
-    }
-}
-
 @media (max-width: 991px) and (min-width: 768px) {
     section.search {
+        /*width: 100%;*/
         background-image: url(../../../../assets/docdoc-fundal.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -368,7 +255,6 @@ section.search .search .group-2 .statistic4 h2 {
     }
 
     section.search .container .search .group-1 {
-        width: 80%;
         margin-left: auto;
         margin-right: auto;
         min-height: 100px;
@@ -394,67 +280,60 @@ section.search .search .group-2 .statistic4 h2 {
         border-radius: 0 0 0 5px;
     }
 
-    section.search .container .search .group-1 .search__button {
+    section.search .search .group-1 .search__button {
         width: 50%;
         border-radius: 0 0 5px 0;
     }
+}
+@media (max-width: 768px) {
 
-    section.search .container .search .group-2 {
-        width: 360px;
-        margin-left: -180px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    section.search .search {
+        padding: 0 15px;
     }
 
-    section.search .container .search .group-2 .statistic1,
-    section.search .container .search .group-2 .statistic2,
-    section.search .container .search .group-2 .statistic3,
-    section.search .container .search .group-2 .statistic4 {
-        width: 180px;
-        height: 42px;
+    section.search .search h1 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-top: 60px;
     }
 
-    section.search .container .search .group-2 .statistic1 h1 {
-        margin: 0 0 0 14px;
+    section.search .search .search__sub-title-span h2 {
+        font-size: 21px;
     }
 
-    section.search .container .search .group-2 .statistic1 h2 {
-        margin: 10px 0 0 14px;
+    section.search .search .group-1 {
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 200px;
+        margin-top: 40px;
+        left: 0;
+        display: block;
     }
 
-    section.search .container .search .group-2 .statistic2 {
-        margin-top: 0;
+    section.search .search .group-1 select {
+        margin-left: 0;
     }
 
-    section.search .container .search .group-2 .statistic2 h1 {
-        margin: 0 0 0 22px;
+    section.search .search .group-1 #Type {
+        width: 50%;
+        background-position: center right 20px;
+        border-right: none;
+        border-radius: 5px 5px 0 0;
     }
 
-    section.search .container .search .group-2 .statistic2 h2 {
-        margin: 10px 0 0 22px;
+    section.search .search .group-1 #Special {
+        width: 50%;
+        background-position: center right 20px;
+        border-right: none;
     }
 
-    section.search .container .search .group-2 .statistic3 {
-        margin-top: 25px;
+    section.search .search .group-1 #Location {
+        width: 50%;
+        background-position: center right 20px;
     }
 
-    section.search .container .search .group-2 .statistic3 h1 {
-        margin: 0 0 0 26px;
-    }
-
-    section.search .container .search .group-2 .statistic3 h2 {
-        margin: 10px 0 0 26px;
-    }
-
-    section.search .container .search .group-2 .statistic4 {
-        margin-top: 25px;
-    }
-
-    section.search .container .search .group-2 .statistic4 h1 {
-        margin: 0 0 0 10px;
-    }
-
-    section.search .container .search .group-2 .statistic4 h2 {
-        margin: 10px 0 0 10px;
+    section.search .search .group-1 .search__button {
+        width: 50%;
+        border-radius: 0 0 5px 5px;
     }
 }

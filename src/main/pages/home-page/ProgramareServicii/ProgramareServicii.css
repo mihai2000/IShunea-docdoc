@@ -105,23 +105,7 @@ section .program-service2 div ul li:last-child {
     margin: 0;
 }
 
-@media (max-width: 767px) {
-    section.program-service2 .container .program-service2 div {
-        margin: 10px 0 0 0;
-    }
 
-    section.program-service2 .container .program-service2 div ul li {
-        display: none;
-    }
-
-    section.program-service2 .container .program-service2 div ul li.column-title {
-        display: block;
-    }
-
-    section.program-service2 .container .program-service2:first-child {
-        margin-top: 10px;
-    }
-}
 
 section .program-service3 {
     overflow: visible;
@@ -168,69 +152,62 @@ section .program-service3 div Button:focus {
     outline: 0;
 }
 
-@media (max-width: 767px) {
-    section.program-service2 .container .program-service2 div {
-        margin: 10px 0 0 0;
-    }
 
-    section.program-service2 .container .program-service2 div ul li {
-        display: none;
-    }
-
-    section.program-service2 .container .program-service2 div ul li.column-title {
-        display: block;
-    }
-
-    section.program-service2 .container .program-service2:first-child {
-        margin-top: 10px;
-    }
-
-    section.program-service1 {
-        padding: 0 15px;
-    }
-
-    section.program-service1 .container {
+@media (max-width: 991px) and (min-width: 768px) {
+    section .program-service1 {
         overflow: visible;
     }
 
-    section.program-service1 .container .program-service1 {
+    section .program-service1 {
         min-height: 120px;
     }
 
-    section.program-service1 .container .program-service1 .figure {
+    section .program-service1 .figure {
+        margin-bottom: 5px;
+    }
+    section .program-service2 .container {
+        overflow: visible;
+    }
+
+    section .program-service2 .column-title a {
+        margin: 15px 0 0 0;
+    }
+}
+@media (max-width: 767px) {
+    section .program-service2 div {
+        margin: 10px 0 0 0;
+    }
+
+    section .program-service2 div ul li {
+        display: none;
+    }
+
+    section .program-service2 div ul li.column-title {
+        display: block;
+    }
+
+    section .program-service1 {
+        padding: 0 15px;
+    }
+
+    section .program-service1 {
+        overflow: visible;
+    }
+
+    section .program-service1 {
+        min-height: 120px;
+    }
+
+    section .program-service1 .figure {
         margin-bottom: 5px;
         left: 0;
         margin-left: 0;
         text-align: center;
     }
-
-    section.program-service2 .container {
+    section .program-service2 .container {
         overflow: visible;
     }
-
-    section.program-service2 .container .program-service2 {
-        margin: 15px 0 0 0;
-    }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-    section.program-service1 .container {
-        overflow: visible;
-    }
-
-    section.program-service1 .container .program-service1 {
-        min-height: 120px;
-    }
-
-    section.program-service1 .container .program-service1 .figure {
-        margin-bottom: 5px;
-    }
-
-    section.program-service2 .container {
-        overflow: visible;
-    }
-
-    section.program-service2 .container .program-service2 div {
+    section .program-service2 .column-title a  {
         margin: 15px 0 0 0;
     }
 }

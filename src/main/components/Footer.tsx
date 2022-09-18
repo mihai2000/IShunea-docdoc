@@ -4,42 +4,40 @@ import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import logofooter from '../../assets/logofooter.png';
-
-function Footer() {
+import '../../i18next/i18n';
+import { withNamespaces } from 'react-i18next';
+//@ts-ignore
+function Footer({t}) {
     return (
         <section className="footer">
             <div className="container">
                 <div className="row footer">
-                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 icon-block-footer">
+                    <div className="col-lg-4 icon-block-footer">
                         <img src={logofooter} alt="logofooter" className="logofooter"/>
                         <h1>
-                            Prin sistemul nostru online, procesul de căutare și programare a unei consultații
-                            medicale se desfășoară în timp real, eficient, accesibil și rapid. Pacienții au
-                            acces mult mai ușor la cei mai buni profesioniști din domeniul sănătății și la
-                            datele activității
-                            lor.
+                            {t('Footer.FooterText')}
                         </h1>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
-                        <h1>Navigare</h1>
+                    <div className="col-md-3 col-lg-2 link-block-footer">
+                        <h1>{t('Footer.Navigare.NavText')}</h1>
                         <ul>
-                            <li><Link to="/Despre">Despre docdoc.md</Link></li>
-                            <li><Link to="/TermeniSiCoditii">Termeni și condiții</Link></li>
-                            <li><Link to="/FAQ">Întrebări frecvente</Link></li>
-                            <li><Link to="/Rating">Despre rating</Link></li>
-                            <li><Link to="/Publicitate">Publicitate online</Link></li>
-                            <li><Link to="/Contacte">Contacte</Link></li>
+                            <li><Link to="/Despre">{t('Footer.Navigare.Despre')}</Link></li>
+                            <li><Link to="/TermeniSiCoditii">{t('Footer.Navigare.TermeniConditii')}</Link></li>
+                            <li><Link to="/FAQ">{t('Footer.Navigare.FAQ')}</Link></li>
+                            <li><Link to="/Rating">{t('Footer.Navigare.Rating')}</Link></li>
+                            <li><Link to="/Publicitate">{t('Footer.Navigare.Publicitate')}</Link></li>
+                            <li><Link to="/Contacte">{t('Footer.Navigare.Contacte')}</Link></li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
-                        <h1>Link-uri</h1>
+                    <div className="col-md-3 col-lg-2 link-block-footer">
+                        <h1>{t('Footer.Link-uri.LinkText')}</h1>
                         <ul>
-                            <li><a href="/Boli" className="Diseases">Ghid de boli</a></li>
-                            <li><a href="/Biblioteca" className="Library">Biblioteca medicală</a></li>
+                            <li><a href="/Boli" className="Diseases">{t('Footer.Link-uri.GhidBoli')}</a></li>
+                            <li><a href="/Biblioteca" className="Library">{t('Footer.Link-uri.Biblioteca')}</a></li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 link-block-footer">
-                        <h1>Social Media</h1>
+                    <div className="col-md-3 col-lg-2 link-block-footer">
+                        <h1>{t('Footer.SocialMedia.SocialText')}</h1>
                         <ul className="social-media-block">
                             <li>
                                 <a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/Docdoc.md">
@@ -59,11 +57,11 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 sign-in-block link-block-footer">
-                        <h1>Doctori și clinici</h1>
+                    <div className="col-md-3 col-lg-2 sign-in-block link-block-footer">
+                        <h1>{t('Footer.DoctoriClinici.DocText')}</h1>
                         <ul>
-                            <li><a href="/ContulMeu">Cabinetul meu</a></li>
-                            <li><a href="/Inregistrare">Înregistrare</a></li>
+                            <li><a href="/ContulMeu">{t('Footer.DoctoriClinici.CabinetulMeu')}</a></li>
+                            <li><a href="/Inregistrare">{t('Footer.DoctoriClinici.Inregistrare')}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,4 +71,5 @@ function Footer() {
     );
 }
 
-export default Footer;
+// @ts-ignore
+export default withNamespaces()(Footer);

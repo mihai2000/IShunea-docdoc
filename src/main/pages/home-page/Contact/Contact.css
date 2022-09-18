@@ -2,7 +2,6 @@ section.program-medic {
     background-image: url(../../../../assets/docdoc-fundal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -10px;
 }
 
 section.program-medic .program-medic {
@@ -13,14 +12,15 @@ section.program-medic .program-medic div h1 {
     color: #fff;
     font-family: 'PT Sans', sans-serif;
     font-size: 32px;
-    font-weight: 400;
-    margin: 44px 80px;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+    margin: 50px 0;
 }
 
 section.program-medic .program-medic .phone-nr2 {
-    height: 37px;
-    width: 100%;
-    margin: 44px -100px;
+    text-align: right;
+    margin: 50px 0;
 }
 
 section.program-medic .program-medic .phone-nr2 img,
@@ -57,17 +57,24 @@ section.program-medic .program-medic .phone-nr2 span {
     float: right;
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+    section.program-medic .container .program-medic span {
+        text-align: right;
+    }
+    section.program-medic .program-medic div h1 {
+        font-size: 28px;
+    }
+}
 @media (max-width: 767px) {
     section.program-medic {
         background-position: top;
     }
-
     section.program-medic .program-medic div h1 {
-        text-align: center;
+        text-align: left;
+        font-size: 24px;
     }
-
     section.program-medic .program-medic .phone-nr2 {
-        width: 100%;
+        /*width: 100%;*/
         float: none;
         position: relative;
         margin-top: 0;
@@ -76,11 +83,5 @@ section.program-medic .program-medic .phone-nr2 span {
     section.program-medic .program-medic span {
         margin-top: 8px;
         text-align: center;
-    }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-    section.program-medic .container .program-medic span {
-        text-align: right;
     }
 }

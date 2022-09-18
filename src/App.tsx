@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 // header
@@ -38,7 +38,7 @@ function App() {
     return    (
         <div>
             <PopupChatReact/>
-            {/*<PopupApp/>*/}
+            <PopupApp/>
             <Header/>
             <NavbarComponent/>
             {/*<Router location={history.location} navigator={history}>*/}

@@ -6,7 +6,7 @@ section.doc-info-sistem .doc-info-sistem {
 
 section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block img,
 section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block h1 {
-    display: inline-block;
+    display: inline-flex;
 }
 
 section.doc-info-sistem .doc-info-sistem .doc-info-sistem__icon-block img {
@@ -48,6 +48,11 @@ section.doc-info-sistem .doc-info-sistem .price h1 {
     margin: 5px auto 5px 25px;
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+    section.doc-info-sistem .container .doc-info-sistem .price {
+        margin-left: 25%;
+    }
+}
 
 @media (max-width: 767px) {
     section.doc-info-sistem .doc-info-sistem div img,
@@ -132,8 +137,3 @@ section.doc-info-sistem .doc-info-sistem .price h1 {
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
-    section.doc-info-sistem .container .doc-info-sistem .price {
-        margin-left: 25%;
-    }
-}

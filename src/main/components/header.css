@@ -2,12 +2,14 @@ section.header .header {
     margin-top: 23px;
     display: flex;
     justify-content: flex-end;
+    
 }
 
 section.header .header .icon img {
     width: 300px;
     display: inline;
     margin-top: 20px;
+    
 }
 
 section.header .header .contact-info-1 {
@@ -15,6 +17,7 @@ section.header .header .contact-info-1 {
     width: 280px;
     margin: -80px 0 20px 0;
     padding: 0;
+    
 
 }
 
@@ -24,6 +27,7 @@ section.header .header .contact-info-1 .link-block {
     height: 13px;
     position: relative;
     left: 75%;
+    
 }
 
 section.header .header .contact-info-1 .link-block a {
@@ -36,15 +40,18 @@ section.header .header .contact-info-1 .link-block a {
     font-weight: 400;
     text-decoration: none;
     text-transform: capitalize;
+    
 }
 
 section.header .header .contact-info-1 .link-block a:first-child {
     margin-right: 25px;
+    
 }
 
 section.header .header .contact-info-1 .link-block a.active {
     text-decoration: underline;
     color: #00b19f;
+    
 }
 
 section.header .header .contact-info-1 .cititle {
@@ -55,10 +62,12 @@ section.header .header .contact-info-1 .cititle {
     color: #1d1d1d;
     margin: 7px 0 0 0;
     padding: 0;
+    
 }
 
 section.header .header .contact-info-1 .call-now {
     margin-top: 6px;
+    
 }
 
 section.header .header .contact-info-1 .call-now img,
@@ -74,12 +83,14 @@ section.header .header .contact-info-1 .call-now h1 {
     font-size: 39px;
     font-weight: 700;
     margin: 0 0 0 3px;
+    
 }
 
 section.header .header .contact-info-1 .call-now img {
     width: 28px;
     height: 28px;
     margin-left: 6px;
+    
     margin-top: 0;
 }
 
@@ -87,12 +98,14 @@ section.header .header .contact-info-1 .number-form {
     margin-top: 10px;
     line-height: 14px;
     height: 14px;
+    
 }
 
 section.header .header .contact-info-1 .number-form a,
 section.header .header .contact-info-1 .number-form span {
     display: inline-block;
     vertical-align: middle;
+    
 }
 
 section.header .header .contact-info-1 .number-form a {
@@ -106,6 +119,7 @@ section.header .header .contact-info-1 .number-form a {
     padding: 0;
     text-decoration: none;
     margin-left: 17px;
+    
 }
 
 section.header .header .contact-info-1 .number-form span {
@@ -115,14 +129,17 @@ section.header .header .contact-info-1 .number-form span {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    
 }
 
 section.header .header .CallBack {
     font-weight: 600;
     display: inline-block;
-
+    
 }
-
+section.header .header .number-form .CallBack .active{
+    display: none;
+}
 section.header .header .CallBack .number-form__callback {
     line-height: 14px;
     font-size: 14px;
@@ -132,6 +149,7 @@ section.header .header .CallBack .number-form__callback {
     padding: 0;
     text-decoration: none;
     cursor: pointer;
+    
 }
 
 section.header .header .CallBack .Form {
@@ -159,6 +177,7 @@ section.header .header .CallBack .Form button {
     background-color: #00b09f;
     cursor: pointer;
     border: none;
+    
     color: white;
 }
 
@@ -167,25 +186,27 @@ section.header .header .CallBack .Confirm {
     margin: 0;
     font-size: 12px;
     color: #00b19f;
+    
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 769px) {
     section.header {
         overflow: hidden;
     }
 
-    section.header .header .icon {
-        margin: 0 50px 5px 50px;
+    section.header .header .icon img {
+        margin: auto;
     }
 
     section.header .header .contact-info-1 {
         margin: -80px 20px 20px 20px;
         text-align: right;
+
     }
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     section.header {
         overflow: hidden;
     }
@@ -193,6 +214,7 @@ section.header .header .CallBack .Confirm {
     section.header .header .icon img {
         width: 500px;
         height: 100px;
+        margin: 15px auto;
     }
 
     section.header .header {

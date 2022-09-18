@@ -1,29 +1,35 @@
 const express = require("express")
 const mysql=require('mysql');
 const app = express();
+require("dotenv").config()
 app.use(express.json());
+const DB_HOST = process.env.DB_HOST
+const DB_username = process.env.DB_username
+const DB_PASSWORD = process.env.DB_PASSWORD
+const DB_DATABASE = process.env.DB_DATABASE
+const DB_PORT = process.env.DB_PORT
+const port = process.env.PORT
 const db = mysql.createConnection({
-    host:'localhost',
-    user:'newuser',
-    password:'mymihai-DAN2ac_ISSQL',
-    database:'ishunea',
+            host: DB_HOST,
+            username: DB_username,
+            password: DB_PASSWORD,
+            database: DB_DATABASE,
+            port: DB_PORT
 });
 app.post('/Inregistrare', (req,res)=>{
     const username = req.body.username;
     const password = req.body.password;
-    db.query('INSERT INTO ishunea (username,password) VALUES(username, password)',
-        [username,password],
-        (err,result)=>{
+    let sql = 'INSERT INTO iShunea (id, username,password) VALUES(null,?,?)';
+    db.query(sql,[null,username,password] , function (err,result) {
         console.log(err);
         });
 });
 app.post('/ContulMeu',  (req, res)=>{
     const username = req.body.username;
     const password = req.body.password;
-    db.query(
-        'SELECT * FROM ishunea WHERE username = ? AND password = ?',
-        [username, password],
-        (err,result)=> {
+    if (username && password){
+    let sql = "SELECT * FROM iShunea WHERE username = ? AND password = ?";
+    db.query(sql, [username, password], function (err, result) {
             if (err) {
                 res.send({err: err});
             }
@@ -34,7 +40,8 @@ app.post('/ContulMeu',  (req, res)=>{
             }
         }
     );
+    }
 });
-app.listen(3001, ()=> {
-    console.log("running server");
+app.listen(port, ()=> {
+    console.log(`Server Started on port ${port}...`);
 });

@@ -1,6 +1,6 @@
 .mainContact {
     font-family: "PT Sans", sans-serif;
-    margin: 0 350px;
+    /*margin: 0 350px;*/
 
 }
 
@@ -32,6 +32,6 @@ h6 {
 }
 
 iframe {
-    width: 420px;
+    width: 320px;
     height: 179px;
 }

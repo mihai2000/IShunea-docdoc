@@ -9,5 +9,124 @@
     "Laboratoare": "Laboratoare",
     "Stomatologii": "Stomatologii",
     "Cosmetologie": "Medicină estetică"
+  },
+  "SearchBar": {
+    "SearchTitle": "Serviciul gratuit de programare la doctor",
+    "SearchSubTitle": "Caută un <span>doctor bun</span> iar noi te vom programa la el",
+    "SearchDropBox": {
+      "Doctor": "Doctor",
+      "Servicii": "Servicii",
+      "DoctorList": "Acupunctor",
+      "ServiciiList": "Ultrasonografie",
+      "Sectoare": "tot Chișinău",
+      "Cauta":"CAUTĂ"
+    },
+    "SearchStatistics" : {
+      "Vizitatori": "Vizitatori",
+      "Programari": "Programari",
+      "Doctori": "Doctori",
+      "Comentarii": "Comentarii"
+    }
+  },
+  "ProgramareDoctor": {
+    "ProgramareText": "Programare la doctor",
+    "AllDoctor": "VEZI TOATE SPECIALITĂȚILE",
+    "DoctorList": {
+      "1": "Acupunctor",
+      "2": "Alergolog",
+      "3": "Androlog",
+      "4": "Cardiolog",
+      "5": "Chirurg",
+      "6": "Chirurg estetician",
+      "7": "Fizioterapeut",
+      "8": "Flebolog",
+      "9": "Gastroenterolog",
+      "10": "Ginecolog",
+      "11": "Hematolog",
+      "12": "Hepatolog",
+      "13": "Neurochirurg",
+      "14": "Neurolog",
+      "15": "Obstetrician-ginecolog",
+      "16": "Oftalmolog",
+      "17": "Oncolog",
+      "18": "Ortoped-traumatolog",
+      "19": "Reflexoterapeut",
+      "20": "Reproductolog (FIV)",
+      "21": "Reumatolog",
+      "22": "Sexolog",
+      "23": "Specialist în masaj",
+      "24": "Stomatolog"
+    }
+  },
+  "Contacte": {
+    "Text1": "Programează-te la doctor",
+    "Text2": "Serviciu gratuit"
+  },
+  "ProgramareServicii": {
+    "ProgramareText": "Programare la servicii de diagnostic",
+    "AllServicii": "VEZI TOATE SERVICIILE ",
+    "ServiciiList": {
+      "1": "Ultrasonografie",
+      "2": "neurosonografia prin fontanelă",
+      "3": "ecografie glanda tiroidă",
+      "4": "Ecografie abdominală",
+      "5": "Ecografie sistemul urinar",
+      "6": "Ecografie bazinul mic",
+      "7": "Ecografie complexă",
+      "8": "Mamografie",
+      "9": "mamografia ambelor glandelor mamare în regim digital, 4 filme",
+      "10": "mamografia ambelor glandelor mamare în regim digital, 2 filme",
+      "11": "mamografia unei glande mamare în regim digital, 1 film",
+      "12": "Radiografie",
+      "13": "oasele bazinului",
+      "14": "oasele brațului",
+      "15": "sistemul urinar",
+      "16": "articulația genunchiului",
+      "17": "Tomografie Computerizată",
+      "18": "cerebrală fără contrast",
+      "19": "nazofaringele",
+      "20": "coloana vertebrală cervicală",
+      "21": "abdomen fără contrast",
+      "22": "organele bazinului mic fără contrast"
+    }
+  },
+  "DocInfo": {
+    "location": {
+      "title":"Cauți un doctor mai aproape de casă?",
+      "text":"Caută un doctor bun mai aproape de casa ta. Indică regiunea unde locuiești, iar sistemul va selecta medicii de care ai nevoie."
+    },
+    "rating": {
+      "title":"Sistemul de rating",
+      "text":"Toți medicii sunt evaluați după anumiți parametri care îi formează ratingul. Iar recenziile și notele tale contează mult."
+    },
+    "pret": {
+      "title":"Alege doctorul în funcție de prețul consultației",
+      "text":"Pe portalul nostru, fiecare doctor are indicat prețul consultației. Poți găsi un doctor bun, orientându-te la un preț convenabil."
+    }
+  },
+  "Footer": {
+    "FooterText": "Prin sistemul nostru online, procesul de căutare și programare a unei consultații medicale se desfășoară în timp real, eficient, accesibil și rapid. Pacienții au acces mult mai ușor la cei mai buni profesioniști din domeniul sănătății și la datele activității lor.",
+    "Navigare": {
+      "NavText": "Navigare",
+      "Despre": "Despre docdoc.md",
+      "TermeniConditii": "Termeni și condiții",
+      "FAQ": "Întrebări frecvente",
+      "Rating": "Despre rating",
+      "Publicitate": "Publicitate online",
+      "Contacte": "Contacte"
+    },
+    "Link-uri": {
+      "LinkText": "Link-uri",
+      "GhidBoli": "Ghid de boli",
+      "Biblioteca": "Biblioteca medicală"
+    },
+    "SocialMedia" : {
+      "SocialText" :"Social Media"
+    },
+    "DoctoriClinici": {
+      "DocText": "Doctori și clinici",
+      "CabinetulMeu": "Cabinetul Meu",
+      "Inregistrare": "Înregistrare"
+    }
   }
 }

@@ -98,14 +98,13 @@ section .program-medic2 .program-medic2 div ul li:last-child {
 }
 
 section .program-medic3 {
+    width: 100%;
     background-color: #fff;
 }
 
 section .program-medic3 div {
-    height: 16px;
     position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -134,30 +133,31 @@ section .program-medic3 div a:focus {
     outline: 0;
 }
 
-@media (max-width: 767px) {
-    section.program-medic2 {
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+    section .program-medic2 .container {
         overflow: hidden;
     }
 
-    section.program-medic2 .program-medic2 {
+    section .program-medic2 .container .program-medic2 {
         margin: 0;
     }
 
-    section.program-medic2 .program-medic2 ul:first-child {
+    section .program-medic2 .container .program-medic2 ul:first-child {
         margin: 15px 0 0 0;
     }
 }
-
-@media (max-width: 991px) and (min-width: 768px) {
-    section.program-medic2 .container {
+@media (max-width: 767px) {
+    section .program-medic2 {
         overflow: hidden;
     }
 
-    section.program-medic2 .container .program-medic2 {
+    section .program-medic2 .container .program-medic2 {
         margin: 0;
     }
 
-    section.program-medic2 .container .program-medic2 ul:first-child {
+    section .program-medic2 .container .program-medic2 ul:first-child {
         margin: 15px 0 0 0;
     }
 }
