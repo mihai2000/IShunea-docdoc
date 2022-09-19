@@ -40,12 +40,12 @@ function Footer({t}) {
                         <h1>{t('Footer.SocialMedia.SocialText')}</h1>
                         <ul className="social-media-block">
                             <li>
-                                <a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/Docdoc.md">
+                                <a target={"_blank"} rel="noreferrer" href="">
                                     <FontAwesomeIcon className="facebook" icon={faFacebook}></FontAwesomeIcon>
                                 </a>
                             </li>
                             <li>
-                                <a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/docdoc.md/?hl=ro">
+                                <a target={"_blank"} rel="noreferrer" href="">
                                     <FontAwesomeIcon className="instagram" icon={faInstagram}></FontAwesomeIcon>
                                 </a>
                             </li>

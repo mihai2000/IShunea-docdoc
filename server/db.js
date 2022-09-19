@@ -20,7 +20,7 @@ app.post('/Inregistrare', (req,res)=>{
     const username = req.body.username;
     const password = req.body.password;
     let sql = 'INSERT INTO iShunea (id, username,password) VALUES(null,?,?)';
-    db.query(sql,[null,username,password] , function (err,result) {
+    db.query(sql,[null,username,password] , function (err,res) {
         console.log(err);
         });
 });

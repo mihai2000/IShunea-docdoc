@@ -26,7 +26,7 @@ export default function MedicinaEstetica() {
                                                             <img src={AMC} alt="AMC Centrul Medical American"/>
                                                         </a>
                                                         <div className="Map">
-                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.
+                                                            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.
                                                                 5466606454593!2d28.840609951276925!3d47.02950293555478!2m3!1f0!2f0!3f0!3m2
                                                                 !1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d4e83f7361d%3A0x969145cb2cebdca0!
                                                                 2sAmerican%20Medical%20Center!5e0!3m2!1sen!2s!4v1599119247319!5m2!1sen!2s"

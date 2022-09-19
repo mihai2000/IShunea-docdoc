@@ -13,7 +13,7 @@ export default function Biblioteca() {
                                 <div className="col-lg-6 left__column">
                                     <ul>
                                         <li>
-                                            <a href="http://www.docdoc.md/ro/library/acupunctura">
+                                            <a href="">
                                                 <div className="program-medic2__icon"></div>
                                                 <div className="program-medic2__text">
                                                     <span>Acupunctura</span>
@@ -22,7 +22,7 @@ export default function Biblioteca() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="http://www.docdoc.md/ro/library/alergologie">
+                                            <a href="">
                                                 <div className="program-medic2__icon"></div>
                                                 <div className="program-medic2__text">
                                                     <span>Alergologie</span>
@@ -31,7 +31,7 @@ export default function Biblioteca() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="http://www.docdoc.md/ro/library/andrologie">
+                                            <a href="">
                                                 <div className="program-medic2__icon"></div>
                                                 <div className="program-medic2__text">
                                                     <span>Andrologie</span>

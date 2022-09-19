@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 // header
@@ -32,13 +32,13 @@ import Doctors from "./main/pages/Doctors/Doctors";
 import {Route, Routes} from "react-router-dom";
 import Laborator from "./main/pages/Institutions/Laborator/Laborator";
 import './i18next/i18n';
-import {PopupChatReact} from "./main/components/PopupChat/PopupChatReact";
-import PopupApp from "./main/components/PopupChat/PopupChatReact";
+import PopupApp ,{PopupChatReact} from "./main/components/PopupChat/PopupChatReact";
+import Popup from "./main/components/PopupOnline/Popup";
 function App() {
     return    (
         <div>
-            <PopupChatReact/>
-            <PopupApp/>
+            {/*<PopupChatReact/>*/}
+            {/*<PopupApp/>*/}
             <Header/>
             <NavbarComponent/>
             {/*<Router location={history.location} navigator={history}>*/}
@@ -65,6 +65,7 @@ function App() {
             </Routes>
             {/*</Router>*/}
             <Footer/>
+            <Popup/>
         </div>
     );
 }

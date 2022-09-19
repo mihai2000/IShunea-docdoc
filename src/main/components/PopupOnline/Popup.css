@@ -1,0 +1,89 @@
+.Popup .chat-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.Popup .chat-btn .close {
+    display: none;
+}
+
+.Popup .chat-btn .i {
+    transition: all 0.9s ease;
+}
+
+.Popup .chat-btn .i {
+    font-size: 22px;
+    color: #fff !important;
+}
+.Popup .chat-btn .i.comment{
+    margin: 0 15px;
+}
+/*.Popup .chat-btn .commenting{*/
+/*    margin: 5px 15px;*/
+/*}*/
+.Popup .chat-btn {
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    background-color: #dc4593;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+}
+
+.Popup .wrapper {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.Popup #check:checked~.wrapper {
+    opacity: 1;
+}
+
+.Popup .header {
+    padding: 13px;
+    background-color: #dc4593;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.Popup .chat-form {
+    padding: 15px;
+}
+
+.Popup .chat-form input,
+.Popup textarea,
+.Popup button {
+    margin-bottom: 10px;
+}
+
+.Popup .chat-form textarea {
+    resize: none;
+}
+
+.form-control:focus,
+.Popup .btn:focus {
+    box-shadow: #b4b5b6;
+}
+
+.Popup .btn,
+.Popup .btn:focus,
+.Popup.btn:hover {
+    background-color: #dc4593;
+    border: #dc4593;
+}
+
+#check {
+    display: none !important;
+}

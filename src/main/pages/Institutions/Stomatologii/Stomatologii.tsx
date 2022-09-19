@@ -100,7 +100,7 @@ export default function Stomatologii() {
                                                             munceşte cu râvnă
                                                             şi încredere pentru zâmbetul Dumneavoastră.</p>
                                                         <a href="http://www.docdoc.md/files/2015/11/25/2f8067bca657ca1ff19af594ae35814e/price dr.grossu.pdf"
-                                                           target="_blank" className="PriceList">Vezi price-list
+                                                           target="_blank" rel="noreferrer"  className="PriceList">Vezi price-list
                                                             complet</a>
                                                     </div>
 

@@ -27,7 +27,7 @@ export default function SearchComponentInstitutions() {
             <div className="container">
                 <div className="row search small">
                     <div className="group-1">
-                        <select id="Type" /*onChange="selectSearchType()"*/>
+                        <select id="Type" onChange={selectSearchType}>
                             <option value="doctor" className="Level">Doctor</option>
                             <option value="service" className="Level">Servicii</option>
                         </select>

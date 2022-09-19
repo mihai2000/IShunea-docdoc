@@ -39,6 +39,7 @@ export default function Laborator(
                                                         </a>
                                                         <div className="Map">
                                                             <iframe
+                                                                title="map"
                                                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d809.3057696542228!2d28.866876147073558!3d46.978005168342186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9798380266309%3A0xfa450d01b2dcda79!2sAmerican%20Medical%20Center!5e0!3m2!1sru!2sus!4v1656062277739!5m2!1sru!2sus"
                                                                 className="Map">
                                                             </iframe>
@@ -92,6 +93,7 @@ export default function Laborator(
                                                         </a>
                                                         <div className="Map">
                                                             <iframe
+                                                                title="map"
                                                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d809.3057696542228!2d28.866876147073558!3d46.978005168342186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9798380266309%3A0xfa450d01b2dcda79!2sAmerican%20Medical%20Center!5e0!3m2!1sru!2sus!4v1656062277739!5m2!1sru!2sus"
                                                                 className="Map">
                                                             </iframe>

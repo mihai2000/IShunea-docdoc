@@ -3,6 +3,7 @@ import './Doctors.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ModalBody from "./Modal/Modal";
+import icontrianglewhite from '../../../assets/icontriangle.png';
 
 export default function Doctors() {
     const [show, setShow] = useState(false);
@@ -25,7 +26,7 @@ export default function Doctors() {
 
                                 <Button className="basic-info-button" onClick={handleShow}>
                                     <div>
-                                        <img src="http://www.docdoc.md/static/img/icontrianglewhite.png"
+                                        <img src={icontrianglewhite}
                                              alt="iconphonewhite"/>
                                         <h1>Programare la consultație</h1>
                                     </div>
