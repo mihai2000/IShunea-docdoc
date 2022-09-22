@@ -1,7 +1,7 @@
 {
   "name": "ishunea",
   "version": "0.1.0",
-  "homepage": "https://mihai2000.github.io/IShunea-docdoc",
+  "homepage": "ssh://mihai2000.github.io/IShunea-docdoc/",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.4.0",
