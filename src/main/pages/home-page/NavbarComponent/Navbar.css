@@ -1,13 +1,10 @@
-
 .navbarBody {
     background-color: #00b19f;
     height: 45px;
     border-bottom: thin solid #ffffff;
-
 }
 .bg-navColor{
     background-color: #00b19f;
-
 }
 .buton-group {
     font-size: 18px;
@@ -19,6 +16,9 @@
     border-right: thin solid #fff;
     padding: 0;
     color: white;
+}
+.link:last-child{
+    border: none;
 }
 .link:hover {
     color: white;

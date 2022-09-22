@@ -23,9 +23,9 @@ export default function SearchComponentInstitutions() {
     }
 
     return (
-        <section className="search" style={{backgroundImage: `url(${backgroundimg})`}}>
+        <section className="searchInstitutions" style={{backgroundImage: `url(${backgroundimg})`}}>
             <div className="container">
-                <div className="row search small">
+                <div className="row searchInstitutions small">
                     <div className="group-1">
                         <select id="Type" onChange={selectSearchType}>
                             <option value="doctor" className="Level">Doctor</option>

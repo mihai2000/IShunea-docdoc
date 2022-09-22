@@ -1,10 +1,11 @@
-section.search {
+section.searchInstitutions {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /*width: 115%;*/
 }
 
-section.search .search.small {
+section.searchInstitutions .searchInstitutions.small {
     min-height: 128px;
 }
 
@@ -12,18 +13,18 @@ div {
     display: block;
 }
 
-section.search .search .group-1 {
+section.searchInstitutions .searchInstitutions .group-1 {
     height: 50px;
     position: relative;
-    margin: 40px 0;
+    margin: auto 150px;
 }
 
-section.search .search .group-1 select,
-section.search .search .group-1 button {
+section.searchInstitutions .searchInstitutions .group-1 select,
+section.searchInstitutions .searchInstitutions .group-1 button {
     display: inline-block;
 }
 
-section.search .search .group-1 select {
+section.searchInstitutions .searchInstitutions .group-1 select {
     height: 50px;
     background-color: #fff;
     text-indent: 10px;
@@ -42,64 +43,64 @@ section.search .search .group-1 select {
     padding-left: 10px;
 }
 
-section.search .search .group-1 select:hover {
+section.searchInstitutions .searchInstitutions .group-1 select:hover {
     color: #1d1d1d;
 }
 
-section.search .search .group-1 select:active {
+section.searchInstitutions .searchInstitutions .group-1 select:active {
     color: #1d1d1d;
 }
 
-section.search .search .group-1 select:focus {
+section.searchInstitutions .searchInstitutions .group-1 select:focus {
     color: #1d1d1d;
 }
 
-section.search .search .group-1 select option {
+section.searchInstitutions .searchInstitutions .group-1 select option {
 
     padding: 18px 19px 19px 20px;
     margin: 18px auto 20px 20px;
 }
 
-section.search .search .group-1 #Type {
+section.searchInstitutions .searchInstitutions .group-1 #Type {
     width: 200px;
     border-radius: 5px 0 0 5px;
     background-position: center right 20px;
     border-right: 1px solid #d4d4d4;
 }
 
-section.search .search .group-1 #Special {
+section.searchInstitutions .searchInstitutions .group-1 #Special {
     width: 295px;
     background-position: center right 20px;
     border-right: 1px solid #d4d4d4;
     border-radius: 0;
 }
 
-section.search .search .group-1 #Special.Active {
+section.searchInstitutions .searchInstitutions .group-1 #Special.Active {
     display: none;
 }
 
-section.search .search .group-1 #SpecialService {
+section.searchInstitutions .searchInstitutions .group-1 #SpecialService {
     width: 295px;
     background-position: center right 20px;
     border-right: 1px solid #d4d4d4;
     border-radius: 0;
 }
 
-section.search .search .group-1 #SpecialService.Active {
+section.searchInstitutions .searchInstitutions .group-1 #SpecialService.Active {
     display: none;
 }
 
-section.search .search .group-1 #Location {
+section.searchInstitutions .searchInstitutions .group-1 #Location {
     width: 295px;
     background-position: center right 20px;
     border-radius: 0;
 }
 
-section.search .search .group-1 #Location.Active {
+section.searchInstitutions .searchInstitutions .group-1 #Location.Active {
     display: none;
 }
 
-section.search .search .group-1 .search__button {
+section.searchInstitutions .searchInstitutions .group-1 .search__button {
     height: 50px;
     width: 166px;
     border-radius: 0 5px 5px 0;
@@ -114,7 +115,7 @@ section.search .search .group-1 .search__button {
     text-transform: uppercase;
 }
 
-section.search .search .group-1 .search__button i {
+section.searchInstitutions .searchInstitutions .group-1 .search__button i {
     margin-left: 15px;
     font-style: inherit;
 }
@@ -122,21 +123,21 @@ section.search .search .group-1 .search__button i {
 
 @media (max-width: 767px) {
 
-    section.search .search {
+    section.searchInstitutions .searchInstitutions {
         padding: 0 15px;
     }
 
-    section.search .search h1 {
+    section.searchInstitutions .searchInstitutions h1 {
         font-size: 32px;
         line-height: 38px;
         margin-top: 60px;
     }
 
-    section.search .search .search__sub-title-span h2 {
+    section.searchInstitutions .searchInstitutions .searchInstitutions__sub-title-span h2 {
         font-size: 21px;
     }
 
-    section.search .search .group-1 {
+    section.searchInstitutions .searchInstitutions .group-1 {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -145,102 +146,102 @@ section.search .search .group-1 .search__button i {
         left: 0;
     }
 
-    section.search .search .group-1 select {
+    section.searchInstitutions .searchInstitutions .group-1 select {
         margin-left: 0;
     }
 
-    section.search .search .group-1 #Type {
+    section.searchInstitutions .searchInstitutions .group-1 #Type {
         width: 100%;
         background-position: center right 20px;
         border-right: none;
         border-radius: 5px 5px 0 0;
     }
 
-    section.search .search .group-1 #Special {
+    section.searchInstitutions .searchInstitutions .group-1 #Special {
         width: 100%;
         background-position: center right 20px;
         border-right: none;
     }
 
-    section.search .search .group-1 #Location {
+    section.searchInstitutions .searchInstitutions .group-1 #Location {
         width: 100%;
         background-position: center right 20px;
     }
 
-    section.search .search .group-1 .search__button {
+    section.searchInstitutions .searchInstitutions .group-1 .search__button {
         width: 100%;
         border-radius: 0 0 5px 5px;
     }
 
-    section.search .search .group-2 {
+    section.searchInstitutions .searchInstitutions .group-2 {
         width: 180px;
         margin-left: -90px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    section.search .search .group-2 .statistic1,
-    section.search .search .group-2 .statistic2,
-    section.search .search .group-2 .statistic3,
-    section.search .search .group-2 .statistic4 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic1,
+    section.searchInstitutions .searchInstitutions .group-2 .statistic2,
+    section.searchInstitutions .searchInstitutions .group-2 .statistic3,
+    section.searchInstitutions .searchInstitutions .group-2 .statistic4 {
         width: 180px;
         height: 42px;
     }
 
-    section.search .search .group-2 .statistic1 h1 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic1 h1 {
         margin: 0 0 0 14px;
     }
 
-    section.search .search .group-2 .statistic1 h2 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic1 h2 {
         margin: 10px 0 0 14px;
     }
 
-    section.search .search .group-2 .statistic2 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic2 {
         margin-top: 25px;
     }
 
-    section.search .search .group-2 .statistic2 h1 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic2 h1 {
         margin: 0 0 0 22px;
     }
 
-    section.search .search .group-2 .statistic2 h2 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic2 h2 {
         margin: 10px 0 0 22px;
     }
 
-    section.search .search .group-2 .statistic3 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic3 {
         margin-top: 25px;
     }
 
-    section.search .search .group-2 .statistic3 h1 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic3 h1 {
         margin: 0 0 0 26px;
     }
 
-    section.search .search .group-2 .statistic3 h2 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic3 h2 {
         margin: 10px 0 0 26px;
     }
 
-    section.search .search .group-2 .statistic4 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic4 {
         margin-top: 25px;
     }
 
-    section.search .search .group-2 .statistic4 h1 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic4 h1 {
         margin: 0 0 0 10px;
     }
 
-    section.search .search .group-2 .statistic4 h2 {
+    section.searchInstitutions .searchInstitutions .group-2 .statistic4 h2 {
         margin: 10px 0 0 10px;
     }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-    section.search {
+    section.searchInstitutions {
         background-image: url(../../../../assets/docdoc-fundal.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
     }
 
-    section.search .container .search .group-1 {
+    section.searchInstitutions .container .searchInstitutions .group-1 {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -248,86 +249,86 @@ section.search .search .group-1 .search__button i {
         left: 0;
     }
 
-    section.search .container .search .group-1 #Type {
+    section.searchInstitutions .container .searchInstitutions .group-1 #Type {
         width: 50%;
         background-position: center right 20px;
         border-radius: 5px 0 0 0;
     }
 
-    section.search .container .search .group-1 #Special {
+    section.searchInstitutions .container .searchInstitutions .group-1 #Special {
         width: 50%;
         background-position: center right 20px;
         border-right: none;
         border-radius: 0 5px 0 0;
     }
 
-    section.search .container .search .group-1 #Location {
+    section.searchInstitutions .container .searchInstitutions .group-1 #Location {
         width: 50%;
         background-position: center right 20px;
         border-radius: 0 0 0 5px;
     }
 
-    section.search .container .search .group-1 .search__button {
+    section.searchInstitutions .container .searchInstitutions .group-1 .search__button {
         width: 50%;
         border-radius: 0 0 5px 0;
     }
 
-    section.search .container .search .group-2 {
+    section.searchInstitutions .container .searchInstitutions .group-2 {
         width: 360px;
         margin-left: -180px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
-    section.search .container .search .group-2 .statistic1,
-    section.search .container .search .group-2 .statistic2,
-    section.search .container .search .group-2 .statistic3,
-    section.search .container .search .group-2 .statistic4 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic1,
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic2,
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic3,
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic4 {
         width: 180px;
         height: 42px;
     }
 
-    section.search .container .search .group-2 .statistic1 h1 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic1 h1 {
         margin: 0 0 0 14px;
     }
 
-    section.search .container .search .group-2 .statistic1 h2 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic1 h2 {
         margin: 10px 0 0 14px;
     }
 
-    section.search .container .search .group-2 .statistic2 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic2 {
         margin-top: 0;
     }
 
-    section.search .container .search .group-2 .statistic2 h1 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic2 h1 {
         margin: 0 0 0 22px;
     }
 
-    section.search .container .search .group-2 .statistic2 h2 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic2 h2 {
         margin: 10px 0 0 22px;
     }
 
-    section.search .container .search .group-2 .statistic3 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic3 {
         margin-top: 25px;
     }
 
-    section.search .container .search .group-2 .statistic3 h1 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic3 h1 {
         margin: 0 0 0 26px;
     }
 
-    section.search .container .search .group-2 .statistic3 h2 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic3 h2 {
         margin: 10px 0 0 26px;
     }
 
-    section.search .container .search .group-2 .statistic4 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic4 {
         margin-top: 25px;
     }
 
-    section.search .container .search .group-2 .statistic4 h1 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic4 h1 {
         margin: 0 0 0 10px;
     }
 
-    section.search .container .search .group-2 .statistic4 h2 {
+    section.searchInstitutions .container .searchInstitutions .group-2 .statistic4 h2 {
         margin: 10px 0 0 10px;
     }
 }

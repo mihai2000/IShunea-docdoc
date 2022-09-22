@@ -26,7 +26,6 @@ function NavbarComponent({t}) {
                                      <Nav.Link href="/Institutii/Laborator" className="link">{t('Navbar.Laboratoare')}</Nav.Link>
                                      <Nav.Link href="/Institutii/Stomatologie" className="link">{t('Navbar.Stomatologii')}</Nav.Link>
                                      <Nav.Link href="/Institutii/Cosmetologie" className="link">{t('Navbar.Cosmetologie')}</Nav.Link>
-                                     <Nav.Link href="/Institutii/Center" className="link">{t('Navbar.CentreMed')}</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
